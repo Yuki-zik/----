@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<manifest filename="D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\manifest.xml"/>
+<pcToLineNum>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyApp.mc" id="1" lineNum="5" parent="globals/MyApp" pc="268435460" symbol="&lt;init&gt;"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyApp.mc" id="2" lineNum="31" parent="globals" pc="268435472" symbol="getApp"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyApp.mc" id="2" lineNum="32" parent="globals" pc="268435482" symbol="getApp"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyBackground.mc" id="3" lineNum="6" parent="globals/Background" pc="268435493" symbol="&lt;init&gt;"/>
+<entry filename="d:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="4" lineNum="7" parent="globals/Rez" pc="268435505" symbol="&lt;init&gt;"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyView.mc" id="5" lineNum="7" parent="globals/MyView" pc="268435525" symbol="&lt;init&gt;"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="6" lineNum="45" parent="globals/SynapseView" pc="268435537" symbol="&lt;init&gt;"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyApp.mc" id="7" lineNum="12" parent="globals/MyApp" pc="268435549" symbol="onStart"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyApp.mc" id="8" lineNum="25" parent="globals/MyApp" pc="268435552" symbol="onSettingsChanged"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyApp.mc" id="8" lineNum="26" parent="globals/MyApp" pc="268435554" symbol="onSettingsChanged"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyApp.mc" id="9" lineNum="20" parent="globals/MyApp" pc="268435566" symbol="getInitialView"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyApp.mc" id="9" lineNum="21" parent="globals/MyApp" pc="268435568" symbol="getInitialView"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyApp.mc" id="10" lineNum="7" parent="globals/MyApp" pc="268435594" symbol="initialize"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyApp.mc" id="10" lineNum="8" parent="globals/MyApp" pc="268435596" symbol="initialize"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyApp.mc" id="11" lineNum="16" parent="globals/MyApp" pc="268435609" symbol="onStop"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="12" lineNum="27" parent="globals/WidgetSlot" pc="268435612" symbol="initialize"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="12" lineNum="28" parent="globals/WidgetSlot" pc="268435614" symbol="initialize"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="12" lineNum="29" parent="globals/WidgetSlot" pc="268435623" symbol="initialize"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="12" lineNum="30" parent="globals/WidgetSlot" pc="268435632" symbol="initialize"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="12" lineNum="31" parent="globals/WidgetSlot" pc="268435641" symbol="initialize"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="12" lineNum="32" parent="globals/WidgetSlot" pc="268435650" symbol="initialize"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="12" lineNum="33" parent="globals/WidgetSlot" pc="268435659" symbol="initialize"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="13" lineNum="36" parent="globals/WidgetSlot" pc="268435669" symbol="draw"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="13" lineNum="37" parent="globals/WidgetSlot" pc="268435672" symbol="draw"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="13" lineNum="38" parent="globals/WidgetSlot" pc="268435702" symbol="draw"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="13" lineNum="39" parent="globals/WidgetSlot" pc="268435717" symbol="draw"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="13" lineNum="40" parent="globals/WidgetSlot" pc="268435757" symbol="draw"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="13" lineNum="41" parent="globals/WidgetSlot" pc="268435773" symbol="draw"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyBackground.mc" id="14" lineNum="8" parent="globals/Background" pc="268435811" symbol="initialize"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyBackground.mc" id="14" lineNum="9" parent="globals/Background" pc="268435814" symbol="initialize"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyBackground.mc" id="14" lineNum="13" parent="globals/Background" pc="268435832" symbol="initialize"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyBackground.mc" id="15" lineNum="16" parent="globals/Background" pc="268435849" symbol="draw"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyBackground.mc" id="15" lineNum="18" parent="globals/Background" pc="268435851" symbol="draw"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyBackground.mc" id="15" lineNum="19" parent="globals/Background" pc="268435882" symbol="draw"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyView.mc" id="18" lineNum="14" parent="globals/MyView" pc="268435891" symbol="onLayout"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyView.mc" id="18" lineNum="15" parent="globals/MyView" pc="268435893" symbol="onLayout"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyView.mc" id="20" lineNum="9" parent="globals/MyView" pc="268435927" symbol="initialize"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyView.mc" id="20" lineNum="10" parent="globals/MyView" pc="268435929" symbol="initialize"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyView.mc" id="22" lineNum="25" parent="globals/MyView" pc="268435942" symbol="onUpdate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyView.mc" id="22" lineNum="27" parent="globals/MyView" pc="268435945" symbol="onUpdate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyView.mc" id="22" lineNum="28" parent="globals/MyView" pc="268435952" symbol="onUpdate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyView.mc" id="22" lineNum="29" parent="globals/MyView" pc="268435964" symbol="onUpdate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyView.mc" id="22" lineNum="30" parent="globals/MyView" pc="268435972" symbol="onUpdate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyView.mc" id="22" lineNum="31" parent="globals/MyView" pc="268435991" symbol="onUpdate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyView.mc" id="22" lineNum="32" parent="globals/MyView" pc="268435999" symbol="onUpdate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyView.mc" id="22" lineNum="35" parent="globals/MyView" pc="268436012" symbol="onUpdate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyView.mc" id="22" lineNum="36" parent="globals/MyView" pc="268436032" symbol="onUpdate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyView.mc" id="22" lineNum="37" parent="globals/MyView" pc="268436039" symbol="onUpdate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyView.mc" id="22" lineNum="40" parent="globals/MyView" pc="268436058" symbol="onUpdate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyView.mc" id="22" lineNum="43" parent="globals/MyView" pc="268436105" symbol="onUpdate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyView.mc" id="22" lineNum="44" parent="globals/MyView" pc="268436129" symbol="onUpdate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyView.mc" id="22" lineNum="45" parent="globals/MyView" pc="268436156" symbol="onUpdate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\MyView.mc" id="22" lineNum="48" parent="globals/MyView" pc="268436168" symbol="onUpdate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="23" lineNum="222" parent="globals/SynapseView" pc="268436189" symbol="_polar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="23" lineNum="223" parent="globals/SynapseView" pc="268436192" symbol="_polar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="23" lineNum="224" parent="globals/SynapseView" pc="268436208" symbol="_polar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="24" lineNum="175" parent="globals/SynapseView" pc="268436294" symbol="_getBatteryPct"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="24" lineNum="176" parent="globals/SynapseView" pc="268436297" symbol="_getBatteryPct"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="24" lineNum="177" parent="globals/SynapseView" pc="268436309" symbol="_getBatteryPct"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="24" lineNum="178" parent="globals/SynapseView" pc="268436326" symbol="_getBatteryPct"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="24" lineNum="180" parent="globals/SynapseView" pc="268436337" symbol="_getBatteryPct"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="25" lineNum="279" parent="globals/SynapseView" pc="268436348" symbol="_drawTopBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="25" lineNum="280" parent="globals/SynapseView" pc="268436351" symbol="_drawTopBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="25" lineNum="281" parent="globals/SynapseView" pc="268436360" symbol="_drawTopBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="25" lineNum="282" parent="globals/SynapseView" pc="268436364" symbol="_drawTopBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="25" lineNum="283" parent="globals/SynapseView" pc="268436368" symbol="_drawTopBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="25" lineNum="284" parent="globals/SynapseView" pc="268436372" symbol="_drawTopBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="25" lineNum="287" parent="globals/SynapseView" pc="268436382" symbol="_drawTopBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="25" lineNum="288" parent="globals/SynapseView" pc="268436390" symbol="_drawTopBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="25" lineNum="289" parent="globals/SynapseView" pc="268436397" symbol="_drawTopBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="25" lineNum="290" parent="globals/SynapseView" pc="268436401" symbol="_drawTopBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="25" lineNum="291" parent="globals/SynapseView" pc="268436416" symbol="_drawTopBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="25" lineNum="292" parent="globals/SynapseView" pc="268436434" symbol="_drawTopBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="25" lineNum="293" parent="globals/SynapseView" pc="268436449" symbol="_drawTopBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="25" lineNum="294" parent="globals/SynapseView" pc="268436473" symbol="_drawTopBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="25" lineNum="297" parent="globals/SynapseView" pc="268436529" symbol="_drawTopBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="25" lineNum="298" parent="globals/SynapseView" pc="268436537" symbol="_drawTopBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="25" lineNum="299" parent="globals/SynapseView" pc="268436547" symbol="_drawTopBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="25" lineNum="300" parent="globals/SynapseView" pc="268436562" symbol="_drawTopBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="25" lineNum="301" parent="globals/SynapseView" pc="268436580" symbol="_drawTopBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="25" lineNum="302" parent="globals/SynapseView" pc="268436595" symbol="_drawTopBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="25" lineNum="303" parent="globals/SynapseView" pc="268436619" symbol="_drawTopBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="25" lineNum="306" parent="globals/SynapseView" pc="268436675" symbol="_drawTopBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="25" lineNum="307" parent="globals/SynapseView" pc="268436688" symbol="_drawTopBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="25" lineNum="308" parent="globals/SynapseView" pc="268436703" symbol="_drawTopBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="25" lineNum="309" parent="globals/SynapseView" pc="268436724" symbol="_drawTopBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="25" lineNum="310" parent="globals/SynapseView" pc="268436740" symbol="_drawTopBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="26" lineNum="188" parent="globals/SynapseView" pc="268436780" symbol="_getCalories"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="26" lineNum="189" parent="globals/SynapseView" pc="268436783" symbol="_getCalories"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="26" lineNum="190" parent="globals/SynapseView" pc="268436795" symbol="_getCalories"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="26" lineNum="191" parent="globals/SynapseView" pc="268436812" symbol="_getCalories"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="26" lineNum="193" parent="globals/SynapseView" pc="268436847" symbol="_getCalories"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="27" lineNum="210" parent="globals/SynapseView" pc="268436853" symbol="_getWeather"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="27" lineNum="211" parent="globals/SynapseView" pc="268436855" symbol="_getWeather"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="27" lineNum="212" parent="globals/SynapseView" pc="268436859" symbol="_getWeather"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="27" lineNum="214" parent="globals/SynapseView" pc="268436868" symbol="_getWeather"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="28" lineNum="133" parent="globals/SynapseView" pc="268436874" symbol="_getHeartRate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="28" lineNum="134" parent="globals/SynapseView" pc="268436877" symbol="_getHeartRate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="28" lineNum="135" parent="globals/SynapseView" pc="268436889" symbol="_getHeartRate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="28" lineNum="136" parent="globals/SynapseView" pc="268436917" symbol="_getHeartRate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="28" lineNum="138" parent="globals/SynapseView" pc="268436952" symbol="_getHeartRate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="28" lineNum="139" parent="globals/SynapseView" pc="268436956" symbol="_getHeartRate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="28" lineNum="141" parent="globals/SynapseView" pc="268436965" symbol="_getHeartRate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="29" lineNum="155" parent="globals/SynapseView" pc="268436971" symbol="_getStepsShort"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="29" lineNum="156" parent="globals/SynapseView" pc="268436974" symbol="_getStepsShort"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="29" lineNum="157" parent="globals/SynapseView" pc="268436986" symbol="_getStepsShort"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="29" lineNum="158" parent="globals/SynapseView" pc="268437003" symbol="_getStepsShort"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="29" lineNum="159" parent="globals/SynapseView" pc="268437022" symbol="_getStepsShort"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="29" lineNum="160" parent="globals/SynapseView" pc="268437030" symbol="_getStepsShort"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="29" lineNum="162" parent="globals/SynapseView" pc="268437037" symbol="_getStepsShort"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="29" lineNum="164" parent="globals/SynapseView" pc="268437079" symbol="_getStepsShort"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="29" lineNum="165" parent="globals/SynapseView" pc="268437083" symbol="_getStepsShort"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="29" lineNum="167" parent="globals/SynapseView" pc="268437092" symbol="_getStepsShort"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="30" lineNum="251" parent="globals/SynapseView" pc="268437098" symbol="_drawArcSegment"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="30" lineNum="252" parent="globals/SynapseView" pc="268437101" symbol="_drawArcSegment"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="30" lineNum="253" parent="globals/SynapseView" pc="268437108" symbol="_drawArcSegment"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="30" lineNum="254" parent="globals/SynapseView" pc="268437121" symbol="_drawArcSegment"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="30" lineNum="255" parent="globals/SynapseView" pc="268437160" symbol="_drawArcSegment"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="30" lineNum="256" parent="globals/SynapseView" pc="268437167" symbol="_drawArcSegment"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="30" lineNum="257" parent="globals/SynapseView" pc="268437174" symbol="_drawArcSegment"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="30" lineNum="258" parent="globals/SynapseView" pc="268437187" symbol="_drawArcSegment"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="31" lineNum="348" parent="globals/SynapseView" pc="268437230" symbol="_monthAbbrev"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="31" lineNum="349" parent="globals/SynapseView" pc="268437232" symbol="_monthAbbrev"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="32" lineNum="196" parent="globals/SynapseView" pc="268437244" symbol="_getHumidity"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="32" lineNum="197" parent="globals/SynapseView" pc="268437246" symbol="_getHumidity"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="32" lineNum="198" parent="globals/SynapseView" pc="268437250" symbol="_getHumidity"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="32" lineNum="200" parent="globals/SynapseView" pc="268437259" symbol="_getHumidity"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="33" lineNum="170" parent="globals/SynapseView" pc="268437265" symbol="_getBattery"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="33" lineNum="171" parent="globals/SynapseView" pc="268437268" symbol="_getBattery"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="33" lineNum="172" parent="globals/SynapseView" pc="268437280" symbol="_getBattery"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="34" lineNum="144" parent="globals/SynapseView" pc="268437311" symbol="_getSteps"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="34" lineNum="145" parent="globals/SynapseView" pc="268437314" symbol="_getSteps"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="34" lineNum="146" parent="globals/SynapseView" pc="268437326" symbol="_getSteps"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="34" lineNum="147" parent="globals/SynapseView" pc="268437343" symbol="_getSteps"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="34" lineNum="149" parent="globals/SynapseView" pc="268437378" symbol="_getSteps"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="34" lineNum="150" parent="globals/SynapseView" pc="268437382" symbol="_getSteps"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="34" lineNum="152" parent="globals/SynapseView" pc="268437391" symbol="_getSteps"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="35" lineNum="183" parent="globals/SynapseView" pc="268437397" symbol="_getDateShort"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="35" lineNum="184" parent="globals/SynapseView" pc="268437400" symbol="_getDateShort"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="35" lineNum="185" parent="globals/SynapseView" pc="268437425" symbol="_getDateShort"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="36" lineNum="332" parent="globals/SynapseView" pc="268437465" symbol="_drawCenterTime"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="36" lineNum="333" parent="globals/SynapseView" pc="268437468" symbol="_drawCenterTime"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="36" lineNum="334" parent="globals/SynapseView" pc="268437493" symbol="_drawCenterTime"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="36" lineNum="335" parent="globals/SynapseView" pc="268437525" symbol="_drawCenterTime"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="36" lineNum="337" parent="globals/SynapseView" pc="268437557" symbol="_drawCenterTime"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="36" lineNum="338" parent="globals/SynapseView" pc="268437573" symbol="_drawCenterTime"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="36" lineNum="339" parent="globals/SynapseView" pc="268437613" symbol="_drawCenterTime"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="36" lineNum="340" parent="globals/SynapseView" pc="268437629" symbol="_drawCenterTime"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="37" lineNum="230" parent="globals/SynapseView" pc="268437670" symbol="_drawGrid"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="37" lineNum="231" parent="globals/SynapseView" pc="268437673" symbol="_drawGrid"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="37" lineNum="232" parent="globals/SynapseView" pc="268437688" symbol="_drawGrid"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="37" lineNum="233" parent="globals/SynapseView" pc="268437692" symbol="_drawGrid"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="37" lineNum="234" parent="globals/SynapseView" pc="268437701" symbol="_drawGrid"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="37" lineNum="235" parent="globals/SynapseView" pc="268437710" symbol="_drawGrid"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="37" lineNum="236" parent="globals/SynapseView" pc="268437721" symbol="_drawGrid"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="37" lineNum="238" parent="globals/SynapseView" pc="268437748" symbol="_drawGrid"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="37" lineNum="239" parent="globals/SynapseView" pc="268437759" symbol="_drawGrid"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="37" lineNum="241" parent="globals/SynapseView" pc="268437786" symbol="_drawGrid"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="37" lineNum="242" parent="globals/SynapseView" pc="268437801" symbol="_drawGrid"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="38" lineNum="62" parent="globals/SynapseView" pc="268437830" symbol="onLayout"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="38" lineNum="63" parent="globals/SynapseView" pc="268437833" symbol="onLayout"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="38" lineNum="64" parent="globals/SynapseView" pc="268437870" symbol="onLayout"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="38" lineNum="65" parent="globals/SynapseView" pc="268437879" symbol="onLayout"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="38" lineNum="66" parent="globals/SynapseView" pc="268437888" symbol="onLayout"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="38" lineNum="68" parent="globals/SynapseView" pc="268437897" symbol="onLayout"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="38" lineNum="69" parent="globals/SynapseView" pc="268437906" symbol="onLayout"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="38" lineNum="70" parent="globals/SynapseView" pc="268437915" symbol="onLayout"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="38" lineNum="71" parent="globals/SynapseView" pc="268437923" symbol="onLayout"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="38" lineNum="73" parent="globals/SynapseView" pc="268437932" symbol="onLayout"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="38" lineNum="74" parent="globals/SynapseView" pc="268437936" symbol="onLayout"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="38" lineNum="75" parent="globals/SynapseView" pc="268437943" symbol="onLayout"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="38" lineNum="76" parent="globals/SynapseView" pc="268437950" symbol="onLayout"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="38" lineNum="82" parent="globals/SynapseView" pc="268438020" symbol="onLayout"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="38" lineNum="83" parent="globals/SynapseView" pc="268438036" symbol="onLayout"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="38" lineNum="84" parent="globals/SynapseView" pc="268438053" symbol="onLayout"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="38" lineNum="87" parent="globals/SynapseView" pc="268438121" symbol="onLayout"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="38" lineNum="88" parent="globals/SynapseView" pc="268438128" symbol="onLayout"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="38" lineNum="89" parent="globals/SynapseView" pc="268438135" symbol="onLayout"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="38" lineNum="94" parent="globals/SynapseView" pc="268438189" symbol="onLayout"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="38" lineNum="95" parent="globals/SynapseView" pc="268438196" symbol="onLayout"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="38" lineNum="96" parent="globals/SynapseView" pc="268438212" symbol="onLayout"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="38" lineNum="97" parent="globals/SynapseView" pc="268438232" symbol="onLayout"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="38" lineNum="100" parent="globals/SynapseView" pc="268438301" symbol="onLayout"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="38" lineNum="101" parent="globals/SynapseView" pc="268438313" symbol="onLayout"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="38" lineNum="102" parent="globals/SynapseView" pc="268438401" symbol="onLayout"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="39" lineNum="203" parent="globals/SynapseView" pc="268438490" symbol="_getHumidityPct"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="39" lineNum="204" parent="globals/SynapseView" pc="268438492" symbol="_getHumidityPct"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="39" lineNum="205" parent="globals/SynapseView" pc="268438496" symbol="_getHumidityPct"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="39" lineNum="207" parent="globals/SynapseView" pc="268438502" symbol="_getHumidityPct"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="40" lineNum="269" parent="globals/SynapseView" pc="268438505" symbol="_drawStepArc"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="40" lineNum="270" parent="globals/SynapseView" pc="268438508" symbol="_drawStepArc"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="40" lineNum="271" parent="globals/SynapseView" pc="268438538" symbol="_drawStepArc"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="40" lineNum="272" parent="globals/SynapseView" pc="268438546" symbol="_drawStepArc"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="40" lineNum="273" parent="globals/SynapseView" pc="268438554" symbol="_drawStepArc"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="40" lineNum="275" parent="globals/SynapseView" pc="268438561" symbol="_drawStepArc"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="41" lineNum="217" parent="globals/SynapseView" pc="268438591" symbol="_getNotifications"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="41" lineNum="218" parent="globals/SynapseView" pc="268438593" symbol="_getNotifications"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="42" lineNum="262" parent="globals/SynapseView" pc="268438599" symbol="_drawDayArc"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="42" lineNum="263" parent="globals/SynapseView" pc="268438602" symbol="_drawDayArc"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="42" lineNum="264" parent="globals/SynapseView" pc="268438627" symbol="_drawDayArc"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="42" lineNum="265" parent="globals/SynapseView" pc="268438645" symbol="_drawDayArc"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="42" lineNum="266" parent="globals/SynapseView" pc="268438655" symbol="_drawDayArc"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="43" lineNum="55" parent="globals/SynapseView" pc="268438684" symbol="initialize"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="43" lineNum="56" parent="globals/SynapseView" pc="268438686" symbol="initialize"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="43" lineNum="57" parent="globals/SynapseView" pc="268438702" symbol="initialize"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="43" lineNum="58" parent="globals/SynapseView" pc="268438711" symbol="initialize"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="43" lineNum="59" parent="globals/SynapseView" pc="268438720" symbol="initialize"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="44" lineNum="314" parent="globals/SynapseView" pc="268438730" symbol="_drawBottomBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="44" lineNum="315" parent="globals/SynapseView" pc="268438733" symbol="_drawBottomBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="44" lineNum="316" parent="globals/SynapseView" pc="268438742" symbol="_drawBottomBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="44" lineNum="317" parent="globals/SynapseView" pc="268438754" symbol="_drawBottomBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="44" lineNum="318" parent="globals/SynapseView" pc="268438758" symbol="_drawBottomBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="44" lineNum="319" parent="globals/SynapseView" pc="268438762" symbol="_drawBottomBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="44" lineNum="320" parent="globals/SynapseView" pc="268438772" symbol="_drawBottomBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="44" lineNum="321" parent="globals/SynapseView" pc="268438812" symbol="_drawBottomBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="44" lineNum="322" parent="globals/SynapseView" pc="268438826" symbol="_drawBottomBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="44" lineNum="323" parent="globals/SynapseView" pc="268438834" symbol="_drawBottomBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="44" lineNum="325" parent="globals/SynapseView" pc="268438841" symbol="_drawBottomBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="44" lineNum="326" parent="globals/SynapseView" pc="268438856" symbol="_drawBottomBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="44" lineNum="327" parent="globals/SynapseView" pc="268438874" symbol="_drawBottomBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="44" lineNum="328" parent="globals/SynapseView" pc="268438889" symbol="_drawBottomBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="44" lineNum="329" parent="globals/SynapseView" pc="268438910" symbol="_drawBottomBar"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="45" lineNum="105" parent="globals/SynapseView" pc="268438966" symbol="onUpdate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="45" lineNum="106" parent="globals/SynapseView" pc="268438969" symbol="onUpdate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="45" lineNum="108" parent="globals/SynapseView" pc="268438981" symbol="onUpdate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="45" lineNum="109" parent="globals/SynapseView" pc="268438993" symbol="onUpdate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="45" lineNum="111" parent="globals/SynapseView" pc="268439001" symbol="onUpdate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="45" lineNum="112" parent="globals/SynapseView" pc="268439012" symbol="onUpdate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="45" lineNum="113" parent="globals/SynapseView" pc="268439023" symbol="onUpdate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="45" lineNum="114" parent="globals/SynapseView" pc="268439034" symbol="onUpdate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="45" lineNum="115" parent="globals/SynapseView" pc="268439047" symbol="onUpdate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="45" lineNum="116" parent="globals/SynapseView" pc="268439058" symbol="onUpdate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="45" lineNum="118" parent="globals/SynapseView" pc="268439071" symbol="onUpdate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="45" lineNum="119" parent="globals/SynapseView" pc="268439091" symbol="onUpdate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="45" lineNum="121" parent="globals/SynapseView" pc="268439120" symbol="onUpdate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="45" lineNum="122" parent="globals/SynapseView" pc="268439140" symbol="onUpdate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="45" lineNum="124" parent="globals/SynapseView" pc="268439169" symbol="onUpdate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="45" lineNum="125" parent="globals/SynapseView" pc="268439189" symbol="onUpdate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="45" lineNum="128" parent="globals/SynapseView" pc="268439218" symbol="onUpdate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="45" lineNum="129" parent="globals/SynapseView" pc="268439229" symbol="onUpdate"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="46" lineNum="343" parent="globals/SynapseView" pc="268439241" symbol="_drawFooter"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="46" lineNum="344" parent="globals/SynapseView" pc="268439243" symbol="_drawFooter"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="46" lineNum="345" parent="globals/SynapseView" pc="268439258" symbol="_drawFooter"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="47" lineNum="245" parent="globals/SynapseView" pc="268439298" symbol="_drawDecor"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="47" lineNum="247" parent="globals/SynapseView" pc="268439300" symbol="_drawDecor"/>
+<entry filename="D:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\source\\SynapseView.mc" id="47" lineNum="248" parent="globals/SynapseView" pc="268439315" symbol="_drawDecor"/>
+<entry filename="d:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="48" lineNum="13" parent="globals/Rez/Layouts" pc="268439343" symbol="WatchFace"/>
+<entry filename="d:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="48" lineNum="14" parent="globals/Rez/Layouts" pc="268439354" symbol="WatchFace"/>
+<entry filename="d:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="48" lineNum="16" parent="globals/Rez/Layouts" pc="268439378" symbol="WatchFace"/>
+<entry filename="d:\\学习科研\\DUAP服务器数据保存\\压缩防御\\autodl-tmp\\code2\\佳明表盘\\My\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="48" lineNum="18" parent="globals/Rez/Layouts" pc="268439494" symbol="WatchFace"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="8388639" module="true" symbol="Graphics"/>
+<entry id="36" method="true" symbol="_getHumidityPct"/>
+<entry id="18" method="true" symbol="_drawBottomBar"/>
+<entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+<entry id="37" method="true" symbol="_getNotifications"/>
+<entry id="38" method="true" symbol="_getSteps"/>
+<entry id="22" method="true" symbol="_drawFooter"/>
+<entry id="8389683" method="true" symbol="onSettingsChanged"/>
+<entry field="true" id="52" symbol="ColorRed"/>
+<entry id="39" method="true" symbol="_getStepsShort"/>
+<entry id="20" method="true" symbol="_drawDayArc"/>
+<entry field="true" id="15" symbol="_bottomSlots"/>
+<entry id="30" method="true" symbol="_getBattery"/>
+<entry field="true" id="55" symbol="MilitaryFormatTitle"/>
+<entry field="true" id="27" symbol="_fontTimeLarge"/>
+<entry field="true" id="11" symbol="fontValue"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry field="true" id="10" symbol="fontLabel"/>
+<entry field="true" id="49" symbol="ColorBlue"/>
+<entry field="true" id="46" symbol="AppName"/>
+<entry id="42" method="true" symbol="_monthAbbrev"/>
+<entry id="5" module="true" symbol="globals/Rez/Strings"/>
+<entry field="true" id="28" symbol="_fontTimeSmall"/>
+<entry field="true" id="8389157" symbol="COLOR_WHITE"/>
+<entry id="31" method="true" symbol="_getBatteryPct"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry field="true" id="8389138" symbol="label"/>
+<entry id="2" module="true" symbol="globals/Rez"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+<entry field="true" id="8389065" symbol="locY"/>
+<entry field="true" id="8389064" symbol="locX"/>
+<entry field="true" id="8389161" symbol="COLOR_RED"/>
+<entry id="34" method="true" symbol="_getHeartRate"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry id="8389348" symbol="font"/>
+<entry id="24" method="true" symbol="_drawStepArc"/>
+<entry id="8389275" method="true" symbol="getApp"/>
+<entry field="true" id="50" symbol="ColorDarkGray"/>
+<entry id="4" module="true" symbol="globals/Rez/Layouts"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry id="8389376" method="true" symbol="onEnterSleep"/>
+<entry field="true" id="8389063" symbol="identifier"/>
+<entry field="true" id="44" symbol="_topSlots"/>
+<entry id="8389349" symbol="justification"/>
+<entry id="6" object="true" symbol="MyApp"/>
+<entry field="true" id="12" symbol="getter"/>
+<entry field="true" id="53" symbol="ColorWhite"/>
+<entry field="true" id="48" symbol="ColorBlack"/>
+<entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+<entry id="33" method="true" symbol="_getDateShort"/>
+<entry id="8389377" method="true" symbol="onExitSleep"/>
+<entry id="8388644" module="true" symbol="System"/>
+<entry id="8388645" module="true" symbol="Time"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry field="true" id="29" symbol="_fontValue"/>
+<entry field="true" id="26" symbol="_fontLabel"/>
+<entry id="8388640" module="true" symbol="Lang"/>
+<entry id="7" object="true" symbol="MyView"/>
+<entry id="8389068" method="true" symbol="draw"/>
+<entry field="true" id="45" symbol="LauncherIcon"/>
+<entry id="8388610" symbol="statics"/>
+<entry id="8389123" method="true" symbol="onShow"/>
+<entry field="true" id="41" symbol="_leftSlots"/>
+<entry id="8389350" module="true" symbol="globals"/>
+<entry field="true" id="47" symbol="BackgroundColorTitle"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry id="8390146" module="true" object="true" symbol="Background"/>
+<entry id="25" method="true" symbol="_drawTopBar"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry id="8" object="true" symbol="SynapseView"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry id="40" method="true" symbol="_getWeather"/>
+<entry id="23" method="true" symbol="_drawGrid"/>
+<entry id="8388641" module="true" symbol="Math"/>
+<entry field="true" id="8388747" symbol="currentHeartRate"/>
+<entry field="true" id="51" symbol="ColorLightGray"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry field="true" id="8389347" symbol="color"/>
+<entry field="true" id="54" symbol="ForegroundColorTitle"/>
+<entry id="17" method="true" symbol="_drawArcSegment"/>
+<entry field="true" id="8389165" symbol="COLOR_GREEN"/>
+<entry id="9" object="true" symbol="WidgetSlot"/>
+<entry id="35" method="true" symbol="_getHumidity"/>
+<entry id="14" module="true" symbol="Layouts"/>
+<entry field="true" id="13" symbol="pos"/>
+<entry id="43" method="true" symbol="_polar"/>
+<entry id="19" method="true" symbol="_drawCenterTime"/>
+<entry id="32" method="true" symbol="_getCalories"/>
+<entry id="21" method="true" symbol="_drawDecor"/>
+<entry id="8389125" method="true" symbol="onHide"/>
+<entry id="8388635" module="true" symbol="Application"/>
+<entry field="true" id="16" symbol="_center"/>
+</symbolTable>
+<localVars>
+<entry arg="true" endPc="268435668" name="label" stackId="1" startPc="268435612"/>
+<entry arg="true" endPc="268435668" name="getter" stackId="2" startPc="268435612"/>
+<entry arg="true" endPc="268435668" name="pos" stackId="3" startPc="268435612"/>
+<entry arg="true" endPc="268435668" name="fontLabel" stackId="4" startPc="268435612"/>
+<entry arg="true" endPc="268435668" name="fontValue" stackId="5" startPc="268435612"/>
+<entry arg="true" endPc="268435668" name="color" stackId="6" startPc="268435612"/>
+<entry arg="true" endPc="268435810" name="dc" stackId="1" startPc="268435669"/>
+<entry endPc="268435809" name="val" stackId="2" startPc="268435672"/>
+<entry endPc="268435847" name="dictionary" stackId="1" startPc="268435814"/>
+<entry arg="true" endPc="268435890" name="dc" stackId="1" startPc="268435849"/>
+<entry arg="true" endPc="268435926" name="dc" stackId="1" startPc="268435891"/>
+<entry arg="true" endPc="268436188" name="dc" stackId="1" startPc="268435942"/>
+<entry endPc="268436187" name="timeFormat" stackId="2" startPc="268435945"/>
+<entry endPc="268436187" name="clockTime" stackId="3" startPc="268435945"/>
+<entry endPc="268436187" name="hours" stackId="4" startPc="268435945"/>
+<entry endPc="268436187" name="timeString" stackId="5" startPc="268435945"/>
+<entry endPc="268436187" name="view" stackId="6" startPc="268435945"/>
+<entry arg="true" endPc="268436293" name="radius" stackId="1" startPc="268436189"/>
+<entry arg="true" endPc="268436293" name="deg" stackId="2" startPc="268436189"/>
+<entry endPc="268436293" name="rad" stackId="3" startPc="268436192"/>
+<entry endPc="268436347" name="stats" stackId="1" startPc="268436297"/>
+<entry arg="true" endPc="268436779" name="dc" stackId="1" startPc="268436348"/>
+<entry endPc="268436778" name="w" stackId="2" startPc="268436351"/>
+<entry endPc="268436778" name="barY" stackId="3" startPc="268436351"/>
+<entry endPc="268436778" name="barH" stackId="4" startPc="268436351"/>
+<entry endPc="268436778" name="pad" stackId="5" startPc="268436351"/>
+<entry endPc="268436778" name="barW" stackId="6" startPc="268436351"/>
+<entry endPc="268436778" name="battPct" stackId="7" startPc="268436351"/>
+<entry endPc="268436778" name="segW" stackId="8" startPc="268436351"/>
+<entry endPc="268436778" name="bx" stackId="9" startPc="268436351"/>
+<entry endPc="268436778" name="humPct" stackId="10" startPc="268436351"/>
+<entry endPc="268436778" name="hx" stackId="11" startPc="268436351"/>
+<entry endPc="268436778" name="tx" stackId="12" startPc="268436351"/>
+<entry endPc="268436852" name="info" stackId="1" startPc="268436783"/>
+<entry endPc="268436970" name="info" stackId="1" startPc="268436877"/>
+<entry endPc="268437097" name="info" stackId="1" startPc="268436974"/>
+<entry endPc="268437075" name="pct" stackId="2" startPc="268437003"/>
+<entry arg="true" endPc="268437229" name="dc" stackId="1" startPc="268437098"/>
+<entry arg="true" endPc="268437229" name="radius" stackId="2" startPc="268437098"/>
+<entry arg="true" endPc="268437229" name="startDeg" stackId="3" startPc="268437098"/>
+<entry arg="true" endPc="268437229" name="sweepDeg" stackId="4" startPc="268437098"/>
+<entry arg="true" endPc="268437229" name="progress" stackId="5" startPc="268437098"/>
+<entry arg="true" endPc="268437229" name="colorActive" stackId="6" startPc="268437098"/>
+<entry arg="true" endPc="268437229" name="colorDim" stackId="7" startPc="268437098"/>
+<entry endPc="268437228" name="size" stackId="8" startPc="268437101"/>
+<entry endPc="268437228" name="activeSweep" stackId="9" startPc="268437101"/>
+<entry arg="true" endPc="268437243" name="m" stackId="1" startPc="268437230"/>
+<entry endPc="268437310" name="stats" stackId="1" startPc="268437268"/>
+<entry endPc="268437396" name="info" stackId="1" startPc="268437314"/>
+<entry endPc="268437464" name="info" stackId="1" startPc="268437400"/>
+<entry arg="true" endPc="268437669" name="dc" stackId="1" startPc="268437465"/>
+<entry endPc="268437668" name="info" stackId="2" startPc="268437468"/>
+<entry endPc="268437668" name="hStr" stackId="3" startPc="268437468"/>
+<entry endPc="268437668" name="mStr" stackId="4" startPc="268437468"/>
+<entry arg="true" endPc="268437829" name="dc" stackId="1" startPc="268437670"/>
+<entry endPc="268437828" name="spacing" stackId="2" startPc="268437673"/>
+<entry endPc="268437828" name="w" stackId="3" startPc="268437673"/>
+<entry endPc="268437828" name="h" stackId="4" startPc="268437673"/>
+<entry endPc="268437747" name="x" stackId="5" startPc="268437721"/>
+<entry endPc="268437785" name="y" stackId="6" startPc="268437759"/>
+<entry arg="true" endPc="268438489" name="dc" stackId="1" startPc="268437830"/>
+<entry endPc="268438488" name="radius" stackId="2" startPc="268437833"/>
+<entry endPc="268438488" name="topAngles" stackId="3" startPc="268437833"/>
+<entry endPc="268438488" name="topLabels" stackId="4" startPc="268437833"/>
+<entry endPc="268438488" name="topGetters" stackId="5" startPc="268437833"/>
+<entry endPc="268438120" name="i" stackId="6" startPc="268438036"/>
+<entry endPc="268438110" name="p" stackId="7" startPc="268438036"/>
+<entry endPc="268438488" name="bottomAngles" stackId="8" startPc="268437833"/>
+<entry endPc="268438488" name="bottomLabels" stackId="9" startPc="268437833"/>
+<entry endPc="268438488" name="bottomGetters" stackId="10" startPc="268437833"/>
+<entry endPc="268438488" name="bottomColors" stackId="11" startPc="268437833"/>
+<entry endPc="268438300" name="j" stackId="12" startPc="268438212"/>
+<entry endPc="268438290" name="pb" stackId="13" startPc="268438212"/>
+<entry endPc="268438488" name="leftX" stackId="14" startPc="268437833"/>
+<entry arg="true" endPc="268438590" name="dc" stackId="1" startPc="268438505"/>
+<entry arg="true" endPc="268438590" name="amInfo" stackId="2" startPc="268438505"/>
+<entry endPc="268438589" name="steps" stackId="3" startPc="268438508"/>
+<entry endPc="268438589" name="progress" stackId="4" startPc="268438508"/>
+<entry arg="true" endPc="268438683" name="dc" stackId="1" startPc="268438599"/>
+<entry endPc="268438682" name="info" stackId="2" startPc="268438602"/>
+<entry endPc="268438682" name="minutes" stackId="3" startPc="268438602"/>
+<entry endPc="268438682" name="progress" stackId="4" startPc="268438602"/>
+<entry arg="true" endPc="268438965" name="dc" stackId="1" startPc="268438730"/>
+<entry arg="true" endPc="268438965" name="amInfo" stackId="2" startPc="268438730"/>
+<entry endPc="268438964" name="w" stackId="3" startPc="268438733"/>
+<entry endPc="268438964" name="barY" stackId="4" startPc="268438733"/>
+<entry endPc="268438964" name="barH" stackId="5" startPc="268438733"/>
+<entry endPc="268438964" name="pad" stackId="6" startPc="268438733"/>
+<entry endPc="268438964" name="barW" stackId="7" startPc="268438733"/>
+<entry endPc="268438964" name="steps" stackId="8" startPc="268438733"/>
+<entry endPc="268438964" name="pct" stackId="9" startPc="268438733"/>
+<entry arg="true" endPc="268439240" name="dc" stackId="1" startPc="268438966"/>
+<entry endPc="268439239" name="amInfo" stackId="2" startPc="268438969"/>
+<entry endPc="268439119" name="i" stackId="3" startPc="268439091"/>
+<entry endPc="268439168" name="j" stackId="4" startPc="268439140"/>
+<entry endPc="268439217" name="k" stackId="5" startPc="268439189"/>
+<entry arg="true" endPc="268439297" name="dc" stackId="1" startPc="268439241"/>
+<entry arg="true" endPc="268439342" name="dc" stackId="1" startPc="268439298"/>
+<entry arg="true" endPc="268439508" name="dc" stackId="1" startPc="268439343"/>
+<entry endPc="268439508" name="rez_cmp_local_custom_drawable_11939594661139614796" stackId="2" startPc="268439354"/>
+<entry endPc="268439508" name="rez_cmp_local_text_TimeLabel" stackId="3" startPc="268439354"/>
+</localVars>
+<deviceInfo deviceVersion="5c7ae9cf907f88c116a91dc4ffd75be9b5b7d2e9" partNumber="006-B3992-00"/>
+<annotations>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="MilitaryFormatTitle"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BackgroundColorTitle"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorRed"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorDarkGray"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorWhite"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ForegroundColorTitle"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorLightGray"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorBlue"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorBlack"/>
+</annotations>
+<dataEntryOffsetMappings>
+<dataEntry label="globals" offset="58" parentId="" symbolId="globals" type="module"/>
+<dataEntry label="globals/MyApp" offset="152" parentId="globals" symbolId="MyApp" type="class"/>
+<dataEntry label="globals/WidgetSlot" offset="232" parentId="globals" symbolId="WidgetSlot" type="class"/>
+<dataEntry label="globals/Background" offset="339" parentId="globals" symbolId="Background" type="class"/>
+<dataEntry label="globals/Rez" offset="392" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/MyView" offset="445" parentId="globals" symbolId="MyView" type="class"/>
+<dataEntry label="globals/SynapseView" offset="543" parentId="globals" symbolId="SynapseView" type="class"/>
+<dataEntry label="globals/Rez/Drawables" offset="875" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Layouts" offset="910" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="945" parentId="Rez" symbolId="Strings" type="module"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" endPc="268435471" name="&lt;init&gt;" parent="MyApp" startPc="268435460">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435492" name="getApp" startPc="268435472">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="WidgetSlot">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435504" name="&lt;init&gt;" parent="Background" startPc="268435493">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435524" name="&lt;init&gt;" parent="Rez" startPc="268435505">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435536" name="&lt;init&gt;" parent="MyView" startPc="268435525">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435548" name="&lt;init&gt;" parent="SynapseView" startPc="268435537">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435551" name="onStart" parent="MyApp" startPc="268435549">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435565" name="onSettingsChanged" parent="MyApp" startPc="268435552">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435593" name="getInitialView" parent="MyApp" startPc="268435566">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435608" name="initialize" parent="MyApp" startPc="268435594">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435611" name="onStop" parent="MyApp" startPc="268435609">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435668" name="initialize" parent="WidgetSlot" startPc="268435612">
+<param id="label"/>
+<param id="getter"/>
+<param id="pos"/>
+<param id="fontLabel"/>
+<param id="fontValue"/>
+<param id="color"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435810" name="draw" parent="WidgetSlot" startPc="268435669">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435848" name="initialize" parent="Background" startPc="268435811">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435890" name="draw" parent="Background" startPc="268435849">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onExitSleep" parent="MyView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onShow" parent="MyView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435926" name="onLayout" parent="MyView" startPc="268435891">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onEnterSleep" parent="MyView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435941" name="initialize" parent="MyView" startPc="268435927">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onHide" parent="MyView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436188" name="onUpdate" parent="MyView" startPc="268435942">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436293" name="_polar" parent="SynapseView" startPc="268436189">
+<param id="radius"/>
+<param id="deg"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436347" name="_getBatteryPct" parent="SynapseView" startPc="268436294">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436779" name="_drawTopBar" parent="SynapseView" startPc="268436348">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436852" name="_getCalories" parent="SynapseView" startPc="268436780">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436873" name="_getWeather" parent="SynapseView" startPc="268436853">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436970" name="_getHeartRate" parent="SynapseView" startPc="268436874">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437097" name="_getStepsShort" parent="SynapseView" startPc="268436971">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437229" name="_drawArcSegment" parent="SynapseView" startPc="268437098">
+<param id="dc"/>
+<param id="radius"/>
+<param id="startDeg"/>
+<param id="sweepDeg"/>
+<param id="progress"/>
+<param id="colorActive"/>
+<param id="colorDim"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437243" name="_monthAbbrev" parent="SynapseView" startPc="268437230">
+<param id="m"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437264" name="_getHumidity" parent="SynapseView" startPc="268437244">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437310" name="_getBattery" parent="SynapseView" startPc="268437265">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437396" name="_getSteps" parent="SynapseView" startPc="268437311">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437464" name="_getDateShort" parent="SynapseView" startPc="268437397">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437669" name="_drawCenterTime" parent="SynapseView" startPc="268437465">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437829" name="_drawGrid" parent="SynapseView" startPc="268437670">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438489" name="onLayout" parent="SynapseView" startPc="268437830">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438504" name="_getHumidityPct" parent="SynapseView" startPc="268438490">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438590" name="_drawStepArc" parent="SynapseView" startPc="268438505">
+<param id="dc"/>
+<param id="amInfo"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438598" name="_getNotifications" parent="SynapseView" startPc="268438591">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438683" name="_drawDayArc" parent="SynapseView" startPc="268438599">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438729" name="initialize" parent="SynapseView" startPc="268438684">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438965" name="_drawBottomBar" parent="SynapseView" startPc="268438730">
+<param id="dc"/>
+<param id="amInfo"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439240" name="onUpdate" parent="SynapseView" startPc="268438966">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439297" name="_drawFooter" parent="SynapseView" startPc="268439241">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439342" name="_drawDecor" parent="SynapseView" startPc="268439298">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439508" name="WatchFace" parent="Layouts" startPc="268439343">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>

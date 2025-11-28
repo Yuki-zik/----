@@ -1,0 +1,2809 @@
+[ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [ActivityMonitor,1,13,28]; @symbol_usingAlias = [AM,1,32,34]; ]
+using Toybox.ActivityMonitor as :AM;
+[ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Graphics,2,13,21]; @symbol_usingAlias = [G,2,25,26]; ]
+using Toybox.Graphics as :G;
+[ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Lang,3,13,17]; @symbol_usingAlias = [Lang,3,21,25]; ]
+using Toybox.Lang as :Lang;
+[ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Math,4,13,17]; @symbol_usingAlias = [Math,4,21,25]; ]
+using Toybox.Math as :Math;
+[ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [System,5,13,19]; @symbol_usingAlias = [Sys,5,23,26]; ]
+using Toybox.System as :Sys;
+[ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 6; @symbol_usingdef<0> = [Toybox,6,6,12]; @symbol_usingdef<1> = [Time,6,13,17]; @symbol_usingAlias = [Time,6,21,25]; ]
+using Toybox.Time as :Time;
+[ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 7; @symbol_usingdef<0> = [Toybox,7,6,12]; @symbol_usingdef<1> = [WatchUi,7,13,20]; @symbol_usingAlias = [Ui,7,24,26]; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 9; @position = 6; @symbol_constdef = [COLOR_CYAN,9,6,16]; ]
+const COLOR_CYAN = 0x06b6d4;
+[ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 10; @position = 6; @symbol_constdef = [COLOR_SLATE,10,6,17]; ]
+const COLOR_SLATE = 0x64748b;
+[ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 11; @position = 6; @symbol_constdef = [COLOR_MUTED,11,6,17]; ]
+const COLOR_MUTED = 0x334155;
+[ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 12; @position = 6; @symbol_constdef = [COLOR_RED,12,6,15]; ]
+const COLOR_RED = 0xef4444;
+[ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 13; @position = 6; @symbol_constdef = [COLOR_GREEN,13,6,17]; ]
+const COLOR_GREEN = 0x22c55e;
+[ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 14; @position = 6; @symbol_constdef = [COLOR_WHITE,14,6,17]; ]
+const COLOR_WHITE;
+[ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 15; @position = 6; @symbol_constdef = [COLOR_BG,15,6,14]; ]
+const COLOR_BG;
+[ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 16; @position = 6; @symbol_constdef = [STEP_GOAL,16,6,15]; ]
+const STEP_GOAL = 10000;
+[ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 17; @position = 6; @symbol_constdef = [MOCK_MODE,17,6,15]; ]
+const MOCK_MODE = true;
+[ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 19; @symbol_classdef = [WidgetSlot,19,6,16]; ]
+class WidgetSlot {
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 19; ]
+    <init> {
+    }
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 19; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 20; @position = 8; @symbol_vardef = [label,20,8,13]; ]
+    var label;
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 21; @position = 8; @symbol_vardef = [getter,21,8,14]; ]
+    var getter;
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 22; @position = 8; @symbol_vardef = [pos,22,8,11]; ]
+    var pos;
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 23; @position = 8; @symbol_vardef = [fontLabel,23,8,17]; ]
+    var fontLabel;
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 24; @position = 8; @symbol_vardef = [fontValue,24,8,17]; ]
+    var fontValue;
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 25; @position = 8; @symbol_vardef = [color,25,8,13]; ]
+    var color;
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 27; @symbol_functiondef = [initialize,27,13,23]; @symbol_param<0> = [label,27,24,29]; @symbol_param<1> = [getter,27,31,37]; @symbol_param<2> = [pos,27,39,42]; @symbol_param<3> = [fontLabel,27,44,53]; @symbol_param<4> = [fontValue,27,55,64]; @symbol_param<5> = [color,27,66,71]; ]
+    function initialize(label, getter, pos, fontLabel, fontValue, color) as Void {
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_27_73_34_4_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 28 8 ]
+        symbol [ self %self 28 8 12 ];
+        %tmp.1 = lgetv %label;
+        symbol [ label %tmp.1 28 21 26 ];
+        symbol [ label ? 28 13 18 ];
+        putv self :label %tmp.1;
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 29 8 ]
+        symbol [ self %self 29 8 12 ];
+        %tmp.2 = lgetv %getter;
+        symbol [ getter %tmp.2 29 22 28 ];
+        symbol [ getter ? 29 13 19 ];
+        putv self :getter %tmp.2;
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 30 8 ]
+        symbol [ self %self 30 8 12 ];
+        %tmp.3 = lgetv %pos;
+        symbol [ pos %tmp.3 30 19 22 ];
+        symbol [ pos ? 30 13 16 ];
+        putv self :pos %tmp.3;
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 31 8 ]
+        symbol [ self %self 31 8 12 ];
+        %tmp.4 = lgetv %fontLabel;
+        symbol [ fontLabel %tmp.4 31 25 34 ];
+        symbol [ fontLabel ? 31 13 22 ];
+        putv self :fontLabel %tmp.4;
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 32 8 ]
+        symbol [ self %self 32 8 12 ];
+        %tmp.5 = lgetv %fontValue;
+        symbol [ fontValue %tmp.5 32 25 34 ];
+        symbol [ fontValue ? 32 13 22 ];
+        putv self :fontValue %tmp.5;
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 33 8 ]
+        symbol [ self %self 33 8 12 ];
+        %tmp.6 = lgetv %color;
+        symbol [ color %tmp.6 33 21 26 ];
+        symbol [ color ? 33 13 18 ];
+        putv self :color %tmp.6;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_27_73_34_4_stop:
+    }
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 36; @symbol_functiondef = [draw,36,13,17]; @symbol_param<0> = [dc,36,18,20]; ]
+    function draw(dc) {
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_36_22_42_4_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 37 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_36_22_42_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_36_22_42_4_stop" ]
+        %val.1 = local;
+        symbol [ val %val.1 37 12 15 ];
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_37_18_37_53_begin:
+        symbol [ getter %tmp.2 37 18 24 ];
+        %tmp.2 = getv ? :getter;
+        %tmp.3 = null;
+        %tmp.4 = ne %tmp.2 %tmp.3;
+        bf %tmp.4 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_37_18_37_53_else_false;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_37_18_37_53_true:
+        symbol [ getter %tmp.6 37 35 41 ];
+        %tmp.6 = getv ? :getter;
+        %tmp.7 = as %tmp.6 { (!Null) };
+        symbol [ invoke %tmp.8 37 42 48 ];
+        %tmp.8 = getv function %tmp.7 :invoke;
+        %tmp.9 = invoke %tmp.7 %tmp.8();
+        push %tmp.9;
+        goto @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_37_18_37_53_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_37_18_37_53_else_false:
+        %tmp.10 = "";
+        push %tmp.10;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_37_18_37_53_end:
+        %tmp.11 = phi [%tmp.4 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_37_18_37_53_begin] [%tmp.9 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_37_18_37_53_true] [%tmp.10 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_37_18_37_53_else_false] [%tmp.11 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_37_18_37_53_end];
+        lputv %val.1 %tmp.11;
+        symbol [ val %val.1 37 12 15 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 38 8 ]
+        %tmp.12 = lgetv %dc;
+        symbol [ dc %tmp.12 38 8 10 ];
+        symbol [ setColor %tmp.13 38 11 19 ];
+        %tmp.13 = getv function %tmp.12 :setColor;
+        symbol [ COLOR_SLATE %tmp.15 38 20 31 ];
+        %tmp.15 = getv ? :COLOR_SLATE;
+        symbol [ COLOR_BG %tmp.17 38 33 41 ];
+        %tmp.17 = getv ? :COLOR_BG;
+        invoke %tmp.12 %tmp.13(%tmp.15, %tmp.17);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 39 8 ]
+        %tmp.18 = lgetv %dc;
+        symbol [ dc %tmp.18 39 8 10 ];
+        symbol [ drawText %tmp.19 39 11 19 ];
+        %tmp.19 = getv function %tmp.18 :drawText;
+        symbol [ pos %tmp.21 39 20 23 ];
+        %tmp.21 = getv ? :pos;
+        %tmp.22 = 0;
+        %tmp.23 = agetv %tmp.21 %tmp.22;
+        symbol [ pos %tmp.25 39 28 31 ];
+        %tmp.25 = getv ? :pos;
+        %tmp.26 = 1;
+        %tmp.27 = agetv %tmp.25 %tmp.26;
+        %tmp.28 = 10;
+        %tmp.29 = sub %tmp.27 %tmp.28;
+        symbol [ fontLabel %tmp.31 39 41 50 ];
+        %tmp.31 = getv ? :fontLabel;
+        symbol [ label %tmp.33 39 52 57 ];
+        %tmp.33 = getv ? :label;
+        symbol [ G %tmp.34 39 59 60 ];
+        %tmp.34 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.35 39 61 80 ];
+        %tmp.35 = getv %tmp.34 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.18 %tmp.19(%tmp.23, %tmp.29, %tmp.31, %tmp.33, %tmp.35);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 40 8 ]
+        %tmp.36 = lgetv %dc;
+        symbol [ dc %tmp.36 40 8 10 ];
+        symbol [ setColor %tmp.37 40 11 19 ];
+        %tmp.37 = getv function %tmp.36 :setColor;
+        symbol [ color %tmp.39 40 20 25 ];
+        %tmp.39 = getv ? :color;
+        symbol [ COLOR_BG %tmp.41 40 27 35 ];
+        %tmp.41 = getv ? :COLOR_BG;
+        invoke %tmp.36 %tmp.37(%tmp.39, %tmp.41);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 41 8 ]
+        %tmp.42 = lgetv %dc;
+        symbol [ dc %tmp.42 41 8 10 ];
+        symbol [ drawText %tmp.43 41 11 19 ];
+        %tmp.43 = getv function %tmp.42 :drawText;
+        symbol [ pos %tmp.45 41 20 23 ];
+        %tmp.45 = getv ? :pos;
+        %tmp.46 = 0;
+        %tmp.47 = agetv %tmp.45 %tmp.46;
+        symbol [ pos %tmp.49 41 28 31 ];
+        %tmp.49 = getv ? :pos;
+        %tmp.50 = 1;
+        %tmp.51 = agetv %tmp.49 %tmp.50;
+        %tmp.52 = 6;
+        %tmp.53 = add %tmp.51 %tmp.52;
+        symbol [ fontValue %tmp.55 41 40 49 ];
+        %tmp.55 = getv ? :fontValue;
+        %tmp.56 = lgetv %val.1;
+        symbol [ val %tmp.56 41 51 54 ];
+        symbol [ G %tmp.57 41 56 57 ];
+        %tmp.57 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.58 41 58 77 ];
+        %tmp.58 = getv %tmp.57 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.42 %tmp.43(%tmp.47, %tmp.53, %tmp.55, %tmp.56, %tmp.58);
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_36_22_42_4_stop:
+    }
+}
+[ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 45; @symbol_classdef = [SynapseView,45,6,17]; @symbol_extends<0> = [Ui,45,26,28]; @symbol_extends<1> = [WatchFace,45,29,38]; ]
+class SynapseView extends Ui.WatchFace {
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 45; ]
+    <init> {
+    }
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 45; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 46; @position = 8; @symbol_vardef = [_center,46,8,15]; ]
+    var _center;
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 47; @position = 8; @symbol_vardef = [_topSlots,47,8,17]; ]
+    var _topSlots;
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 48; @position = 8; @symbol_vardef = [_bottomSlots,48,8,20]; ]
+    var _bottomSlots;
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 49; @position = 8; @symbol_vardef = [_leftSlots,49,8,18]; ]
+    var _leftSlots;
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 50; @position = 8; @symbol_vardef = [_fontTimeLarge,50,8,22]; ]
+    var _fontTimeLarge;
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 51; @position = 8; @symbol_vardef = [_fontTimeSmall,51,8,22]; ]
+    var _fontTimeSmall;
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 52; @position = 8; @symbol_vardef = [_fontLabel,52,8,18]; ]
+    var _fontLabel;
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 53; @position = 8; @symbol_vardef = [_fontValue,53,8,18]; ]
+    var _fontValue;
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 55; @symbol_functiondef = [initialize,55,13,23]; ]
+    function initialize() as Void {
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_55_26_60_4_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 56 8 ]
+        symbol [ Ui %tmp.1 56 8 10 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ WatchFace %tmp.2 56 11 20 ];
+        %tmp.2 = getv %tmp.1 :WatchFace;
+        symbol [ initialize %tmp.3 56 21 31 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 57 8 ]
+        %tmp.4 = newa 0;
+        symbol [ _topSlots ? 57 8 17 ];
+        putv self :_topSlots %tmp.4;
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 58 8 ]
+        %tmp.5 = newa 0;
+        symbol [ _bottomSlots ? 58 8 20 ];
+        putv self :_bottomSlots %tmp.5;
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 59 8 ]
+        %tmp.6 = newa 0;
+        symbol [ _leftSlots ? 59 8 18 ];
+        putv self :_leftSlots %tmp.6;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_55_26_60_4_stop:
+    }
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 62; @symbol_functiondef = [onLayout,62,13,21]; @symbol_param<0> = [dc,62,22,24]; ]
+    function onLayout(dc) {
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_62_26_103_4_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 63 8 ]
+        %tmp.1 = newa 2;
+        %tmp.2 = lgetv %dc;
+        symbol [ dc %tmp.2 63 19 21 ];
+        symbol [ getWidth %tmp.3 63 22 30 ];
+        %tmp.3 = getv function %tmp.2 :getWidth;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        %tmp.5 = 2;
+        %tmp.6 = div %tmp.4 %tmp.5;
+        %tmp.7 = dup %tmp.1;
+        %tmp.8 = aputv %tmp.7 0 %tmp.6;
+        %tmp.9 = lgetv %dc;
+        symbol [ dc %tmp.9 63 38 40 ];
+        symbol [ getHeight %tmp.10 63 41 50 ];
+        %tmp.10 = getv function %tmp.9 :getHeight;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        %tmp.12 = 2;
+        %tmp.13 = div %tmp.11 %tmp.12;
+        %tmp.14 = dup %tmp.8;
+        %tmp.15 = aputv %tmp.14 1 %tmp.13;
+        symbol [ _center ? 63 8 15 ];
+        putv self :_center %tmp.15;
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 64 8 ]
+        %tmp.16 = newa 0;
+        symbol [ _topSlots ? 64 8 17 ];
+        putv self :_topSlots %tmp.16;
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 65 8 ]
+        %tmp.17 = newa 0;
+        symbol [ _bottomSlots ? 65 8 20 ];
+        putv self :_bottomSlots %tmp.17;
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 66 8 ]
+        %tmp.18 = newa 0;
+        symbol [ _leftSlots ? 66 8 18 ];
+        putv self :_leftSlots %tmp.18;
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 68 8 ]
+        symbol [ G %tmp.19 68 25 26 ];
+        %tmp.19 = getm $.Toybox.Graphics;
+        symbol [ FONT_LARGE %tmp.20 68 27 37 ];
+        %tmp.20 = getv %tmp.19 :FONT_LARGE;
+        symbol [ _fontTimeLarge ? 68 8 22 ];
+        putv self :_fontTimeLarge %tmp.20;
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 69 8 ]
+        symbol [ G %tmp.21 69 25 26 ];
+        %tmp.21 = getm $.Toybox.Graphics;
+        symbol [ FONT_MEDIUM %tmp.22 69 27 38 ];
+        %tmp.22 = getv %tmp.21 :FONT_MEDIUM;
+        symbol [ _fontTimeSmall ? 69 8 22 ];
+        putv self :_fontTimeSmall %tmp.22;
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 70 8 ]
+        symbol [ G %tmp.23 70 21 22 ];
+        %tmp.23 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.24 70 23 33 ];
+        %tmp.24 = getv %tmp.23 :FONT_XTINY;
+        symbol [ _fontLabel ? 70 8 18 ];
+        putv self :_fontLabel %tmp.24;
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 71 8 ]
+        symbol [ G %tmp.25 71 21 22 ];
+        %tmp.25 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.26 71 23 32 ];
+        %tmp.26 = getv %tmp.25 :FONT_TINY;
+        symbol [ _fontValue ? 71 8 18 ];
+        putv self :_fontValue %tmp.26;
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 73 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_62_26_103_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_62_26_103_4_stop" ]
+        %radius.1 = local;
+        symbol [ radius %radius.1 73 12 18 ];
+        %tmp.27 = 118;
+        lputv %radius.1 %tmp.27;
+        symbol [ radius %radius.1 73 12 18 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 74 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_62_26_103_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_62_26_103_4_stop" ]
+        %topAngles.2 = local;
+        symbol [ topAngles %topAngles.2 74 12 21 ];
+        %tmp.28 = newa 4;
+        %tmp.29 = -150;
+        %tmp.30 = dup %tmp.28;
+        %tmp.31 = aputv %tmp.30 0 %tmp.29;
+        %tmp.32 = -110;
+        %tmp.33 = dup %tmp.31;
+        %tmp.34 = aputv %tmp.33 1 %tmp.32;
+        %tmp.35 = -70;
+        %tmp.36 = dup %tmp.34;
+        %tmp.37 = aputv %tmp.36 2 %tmp.35;
+        %tmp.38 = -30;
+        %tmp.39 = dup %tmp.37;
+        %tmp.40 = aputv %tmp.39 3 %tmp.38;
+        lputv %topAngles.2 %tmp.40;
+        symbol [ topAngles %topAngles.2 74 12 21 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 75 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_62_26_103_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_62_26_103_4_stop" ]
+        %topLabels.3 = local;
+        symbol [ topLabels %topLabels.3 75 12 21 ];
+        %tmp.41 = newa 4;
+        %tmp.42 = "BATT";
+        %tmp.43 = dup %tmp.41;
+        %tmp.44 = aputv %tmp.43 0 %tmp.42;
+        %tmp.45 = "HUM";
+        %tmp.46 = dup %tmp.44;
+        %tmp.47 = aputv %tmp.46 1 %tmp.45;
+        %tmp.48 = "WEA";
+        %tmp.49 = dup %tmp.47;
+        %tmp.50 = aputv %tmp.49 2 %tmp.48;
+        %tmp.51 = "DATE";
+        %tmp.52 = dup %tmp.50;
+        %tmp.53 = aputv %tmp.52 3 %tmp.51;
+        lputv %topLabels.3 %tmp.53;
+        symbol [ topLabels %topLabels.3 75 12 21 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 76 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_62_26_103_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_62_26_103_4_stop" ]
+        %topGetters.4 = local;
+        symbol [ topGetters %topGetters.4 76 12 22 ];
+        %tmp.54 = newa 4;
+        %tmp.55 = self;
+        symbol [ method %tmp.56 77 12 18 ];
+        %tmp.56 = getv function %tmp.55 :method;
+        %tmp.58 = const :_getBattery;
+        symbol [ _getBattery %tmp.58 77 20 31 const ];
+        %tmp.59 = invoke %tmp.55 %tmp.56(%tmp.58);
+        %tmp.60 = dup %tmp.54;
+        %tmp.61 = aputv %tmp.60 0 %tmp.59;
+        %tmp.62 = self;
+        symbol [ method %tmp.63 78 12 18 ];
+        %tmp.63 = getv function %tmp.62 :method;
+        %tmp.65 = const :_getHumidity;
+        symbol [ _getHumidity %tmp.65 78 20 32 const ];
+        %tmp.66 = invoke %tmp.62 %tmp.63(%tmp.65);
+        %tmp.67 = dup %tmp.61;
+        %tmp.68 = aputv %tmp.67 1 %tmp.66;
+        %tmp.69 = self;
+        symbol [ method %tmp.70 79 12 18 ];
+        %tmp.70 = getv function %tmp.69 :method;
+        %tmp.72 = const :_getWeather;
+        symbol [ _getWeather %tmp.72 79 20 31 const ];
+        %tmp.73 = invoke %tmp.69 %tmp.70(%tmp.72);
+        %tmp.74 = dup %tmp.68;
+        %tmp.75 = aputv %tmp.74 2 %tmp.73;
+        %tmp.76 = self;
+        symbol [ method %tmp.77 80 12 18 ];
+        %tmp.77 = getv function %tmp.76 :method;
+        %tmp.79 = const :_getDateShort;
+        symbol [ _getDateShort %tmp.79 80 20 33 const ];
+        %tmp.80 = invoke %tmp.76 %tmp.77(%tmp.79);
+        %tmp.81 = dup %tmp.75;
+        %tmp.82 = aputv %tmp.81 3 %tmp.80;
+        lputv %topGetters.4 %tmp.82;
+        symbol [ topGetters %topGetters.4 76 12 22 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 82 8 ]
+        for @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_82_8_85_8_for_test @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_82_8_85_8_for_incr @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_82_8_85_8_for_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_82_8_85_8_for_init:
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_82_8_85_8_for_begin" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_82_8_85_8_for_end" ]
+        %i.5 = local;
+        symbol [ i %i.5 82 17 18 ];
+        %tmp.83 = 0;
+        lputv %i.5 %tmp.83;
+        symbol [ i %i.5 82 17 18 ];
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_82_8_85_8_for_test:
+        %tmp.84 = lgetv %i.5;
+        symbol [ i %tmp.84 82 24 25 ];
+        %tmp.85 = lgetv %topAngles.2;
+        symbol [ topAngles %tmp.85 82 28 37 ];
+        symbol [ size %tmp.86 82 38 42 ];
+        %tmp.86 = getv function %tmp.85 :size;
+        %tmp.87 = invoke %tmp.85 %tmp.86();
+        %tmp.88 = lt %tmp.84 %tmp.87;
+        bf %tmp.88 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_82_8_85_8_for_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_82_8_85_8_for_begin:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_82_51_85_8_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 83 12 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_82_51_85_8_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_82_51_85_8_stop" ]
+        %p.6 = local;
+        symbol [ p %p.6 83 16 17 ];
+        %tmp.89 = self;
+        symbol [ _polar %tmp.90 83 20 26 ];
+        %tmp.90 = getv function %tmp.89 :_polar;
+        %tmp.91 = lgetv %radius.1;
+        symbol [ radius %tmp.91 83 27 33 ];
+        %tmp.92 = lgetv %topAngles.2;
+        symbol [ topAngles %tmp.92 83 35 44 ];
+        %tmp.93 = lgetv %i.5;
+        symbol [ i %tmp.93 83 45 46 ];
+        %tmp.94 = agetv %tmp.92 %tmp.93;
+        %tmp.95 = invoke %tmp.89 %tmp.90(%tmp.91, %tmp.94);
+        lputv %p.6 %tmp.95;
+        symbol [ p %p.6 83 16 17 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 84 12 ]
+        symbol [ _topSlots %tmp.97 84 12 21 ];
+        %tmp.97 = getv ? :_topSlots;
+        symbol [ add %tmp.98 84 22 25 ];
+        %tmp.98 = getv function %tmp.97 :add;
+        symbol [ WidgetSlot %tmp.102 84 30 40 ];
+        %tmp.102 = getv ? :WidgetSlot;
+        %tmp.103 = lgetv %topLabels.3;
+        symbol [ topLabels %tmp.103 84 41 50 ];
+        %tmp.104 = lgetv %i.5;
+        symbol [ i %tmp.104 84 51 52 ];
+        %tmp.105 = agetv %tmp.103 %tmp.104;
+        %tmp.106 = lgetv %topGetters.4;
+        symbol [ topGetters %tmp.106 84 55 65 ];
+        %tmp.107 = lgetv %i.5;
+        symbol [ i %tmp.107 84 66 67 ];
+        %tmp.108 = agetv %tmp.106 %tmp.107;
+        %tmp.109 = lgetv %p.6;
+        symbol [ p %tmp.109 84 70 71 ];
+        symbol [ _fontLabel %tmp.111 84 73 83 ];
+        %tmp.111 = getv ? :_fontLabel;
+        symbol [ _fontValue %tmp.113 84 85 95 ];
+        %tmp.113 = getv ? :_fontValue;
+        symbol [ COLOR_CYAN %tmp.115 84 97 107 ];
+        %tmp.115 = getv ? :COLOR_CYAN;
+        %tmp.99 = newc %tmp.102 (%tmp.105, %tmp.108, %tmp.109, %tmp.111, %tmp.113, %tmp.115);
+        invoke %tmp.97 %tmp.98(%tmp.99);
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_82_51_85_8_stop:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_82_8_85_8_for_incr:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 82 ]
+        %tmp.118 = lgetv %i.5;
+        symbol [ i %tmp.118 82 46 47 ];
+        %tmp.119 = add %tmp.118 1;
+        lputv %i.5 %tmp.119;
+        symbol [ i %i.5 82 46 47 ];
+        goto @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_82_8_85_8_for_test;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_82_8_85_8_for_end:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 87 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_62_26_103_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_62_26_103_4_stop" ]
+        %bottomAngles.7 = local;
+        symbol [ bottomAngles %bottomAngles.7 87 12 24 ];
+        %tmp.120 = newa 3;
+        %tmp.121 = 210;
+        %tmp.122 = dup %tmp.120;
+        %tmp.123 = aputv %tmp.122 0 %tmp.121;
+        %tmp.124 = 270;
+        %tmp.125 = dup %tmp.123;
+        %tmp.126 = aputv %tmp.125 1 %tmp.124;
+        %tmp.127 = 330;
+        %tmp.128 = dup %tmp.126;
+        %tmp.129 = aputv %tmp.128 2 %tmp.127;
+        lputv %bottomAngles.7 %tmp.129;
+        symbol [ bottomAngles %bottomAngles.7 87 12 24 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 88 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_62_26_103_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_62_26_103_4_stop" ]
+        %bottomLabels.8 = local;
+        symbol [ bottomLabels %bottomLabels.8 88 12 24 ];
+        %tmp.130 = newa 3;
+        %tmp.131 = "HR";
+        %tmp.132 = dup %tmp.130;
+        %tmp.133 = aputv %tmp.132 0 %tmp.131;
+        %tmp.134 = "MSG";
+        %tmp.135 = dup %tmp.133;
+        %tmp.136 = aputv %tmp.135 1 %tmp.134;
+        %tmp.137 = "STEPS";
+        %tmp.138 = dup %tmp.136;
+        %tmp.139 = aputv %tmp.138 2 %tmp.137;
+        lputv %bottomLabels.8 %tmp.139;
+        symbol [ bottomLabels %bottomLabels.8 88 12 24 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 89 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_62_26_103_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_62_26_103_4_stop" ]
+        %bottomGetters.9 = local;
+        symbol [ bottomGetters %bottomGetters.9 89 12 25 ];
+        %tmp.140 = newa 3;
+        %tmp.141 = self;
+        symbol [ method %tmp.142 90 12 18 ];
+        %tmp.142 = getv function %tmp.141 :method;
+        %tmp.144 = const :_getHeartRate;
+        symbol [ _getHeartRate %tmp.144 90 20 33 const ];
+        %tmp.145 = invoke %tmp.141 %tmp.142(%tmp.144);
+        %tmp.146 = dup %tmp.140;
+        %tmp.147 = aputv %tmp.146 0 %tmp.145;
+        %tmp.148 = self;
+        symbol [ method %tmp.149 91 12 18 ];
+        %tmp.149 = getv function %tmp.148 :method;
+        %tmp.151 = const :_getNotifications;
+        symbol [ _getNotifications %tmp.151 91 20 37 const ];
+        %tmp.152 = invoke %tmp.148 %tmp.149(%tmp.151);
+        %tmp.153 = dup %tmp.147;
+        %tmp.154 = aputv %tmp.153 1 %tmp.152;
+        %tmp.155 = self;
+        symbol [ method %tmp.156 92 12 18 ];
+        %tmp.156 = getv function %tmp.155 :method;
+        %tmp.158 = const :_getStepsShort;
+        symbol [ _getStepsShort %tmp.158 92 20 34 const ];
+        %tmp.159 = invoke %tmp.155 %tmp.156(%tmp.158);
+        %tmp.160 = dup %tmp.154;
+        %tmp.161 = aputv %tmp.160 2 %tmp.159;
+        lputv %bottomGetters.9 %tmp.161;
+        symbol [ bottomGetters %bottomGetters.9 89 12 25 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 94 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_62_26_103_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_62_26_103_4_stop" ]
+        %bottomColors.10 = local;
+        symbol [ bottomColors %bottomColors.10 94 12 24 ];
+        %tmp.162 = newa 3;
+        symbol [ COLOR_RED %tmp.164 94 28 37 ];
+        %tmp.164 = getv ? :COLOR_RED;
+        %tmp.165 = dup %tmp.162;
+        %tmp.166 = aputv %tmp.165 0 %tmp.164;
+        symbol [ COLOR_GREEN %tmp.168 94 39 50 ];
+        %tmp.168 = getv ? :COLOR_GREEN;
+        %tmp.169 = dup %tmp.166;
+        %tmp.170 = aputv %tmp.169 1 %tmp.168;
+        symbol [ COLOR_CYAN %tmp.172 94 52 62 ];
+        %tmp.172 = getv ? :COLOR_CYAN;
+        %tmp.173 = dup %tmp.170;
+        %tmp.174 = aputv %tmp.173 2 %tmp.172;
+        lputv %bottomColors.10 %tmp.174;
+        symbol [ bottomColors %bottomColors.10 94 12 24 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 95 8 ]
+        for @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_95_8_98_8_for_test @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_95_8_98_8_for_incr @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_95_8_98_8_for_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_95_8_98_8_for_init:
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_95_8_98_8_for_begin" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_95_8_98_8_for_end" ]
+        %j.11 = local;
+        symbol [ j %j.11 95 17 18 ];
+        %tmp.175 = 0;
+        lputv %j.11 %tmp.175;
+        symbol [ j %j.11 95 17 18 ];
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_95_8_98_8_for_test:
+        %tmp.176 = lgetv %j.11;
+        symbol [ j %tmp.176 95 24 25 ];
+        %tmp.177 = lgetv %bottomAngles.7;
+        symbol [ bottomAngles %tmp.177 95 28 40 ];
+        symbol [ size %tmp.178 95 41 45 ];
+        %tmp.178 = getv function %tmp.177 :size;
+        %tmp.179 = invoke %tmp.177 %tmp.178();
+        %tmp.180 = lt %tmp.176 %tmp.179;
+        bf %tmp.180 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_95_8_98_8_for_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_95_8_98_8_for_begin:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_95_54_98_8_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 96 12 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_95_54_98_8_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_95_54_98_8_stop" ]
+        %pb.12 = local;
+        symbol [ pb %pb.12 96 16 18 ];
+        %tmp.181 = self;
+        symbol [ _polar %tmp.182 96 21 27 ];
+        %tmp.182 = getv function %tmp.181 :_polar;
+        %tmp.183 = lgetv %radius.1;
+        symbol [ radius %tmp.183 96 28 34 ];
+        %tmp.184 = 4;
+        %tmp.185 = sub %tmp.183 %tmp.184;
+        %tmp.186 = lgetv %bottomAngles.7;
+        symbol [ bottomAngles %tmp.186 96 40 52 ];
+        %tmp.187 = lgetv %j.11;
+        symbol [ j %tmp.187 96 53 54 ];
+        %tmp.188 = agetv %tmp.186 %tmp.187;
+        %tmp.189 = invoke %tmp.181 %tmp.182(%tmp.185, %tmp.188);
+        lputv %pb.12 %tmp.189;
+        symbol [ pb %pb.12 96 16 18 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 97 12 ]
+        symbol [ _bottomSlots %tmp.191 97 12 24 ];
+        %tmp.191 = getv ? :_bottomSlots;
+        symbol [ add %tmp.192 97 25 28 ];
+        %tmp.192 = getv function %tmp.191 :add;
+        symbol [ WidgetSlot %tmp.196 97 33 43 ];
+        %tmp.196 = getv ? :WidgetSlot;
+        %tmp.197 = lgetv %bottomLabels.8;
+        symbol [ bottomLabels %tmp.197 97 44 56 ];
+        %tmp.198 = lgetv %j.11;
+        symbol [ j %tmp.198 97 57 58 ];
+        %tmp.199 = agetv %tmp.197 %tmp.198;
+        %tmp.200 = lgetv %bottomGetters.9;
+        symbol [ bottomGetters %tmp.200 97 61 74 ];
+        %tmp.201 = lgetv %j.11;
+        symbol [ j %tmp.201 97 75 76 ];
+        %tmp.202 = agetv %tmp.200 %tmp.201;
+        %tmp.203 = lgetv %pb.12;
+        symbol [ pb %tmp.203 97 79 81 ];
+        symbol [ _fontLabel %tmp.205 97 83 93 ];
+        %tmp.205 = getv ? :_fontLabel;
+        symbol [ _fontValue %tmp.207 97 95 105 ];
+        %tmp.207 = getv ? :_fontValue;
+        %tmp.208 = lgetv %bottomColors.10;
+        symbol [ bottomColors %tmp.208 97 107 119 ];
+        %tmp.209 = lgetv %j.11;
+        symbol [ j %tmp.209 97 120 121 ];
+        %tmp.210 = agetv %tmp.208 %tmp.209;
+        %tmp.193 = newc %tmp.196 (%tmp.199, %tmp.202, %tmp.203, %tmp.205, %tmp.207, %tmp.210);
+        invoke %tmp.191 %tmp.192(%tmp.193);
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_95_54_98_8_stop:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_95_8_98_8_for_incr:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 95 ]
+        %tmp.213 = lgetv %j.11;
+        symbol [ j %tmp.213 95 49 50 ];
+        %tmp.214 = add %tmp.213 1;
+        lputv %j.11 %tmp.214;
+        symbol [ j %j.11 95 49 50 ];
+        goto @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_95_8_98_8_for_test;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_95_8_98_8_for_end:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 100 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_62_26_103_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_62_26_103_4_stop" ]
+        %leftX.13 = local;
+        symbol [ leftX %leftX.13 100 12 17 ];
+        symbol [ _center %tmp.216 100 20 27 ];
+        %tmp.216 = getv ? :_center;
+        %tmp.217 = 0;
+        %tmp.218 = agetv %tmp.216 %tmp.217;
+        %tmp.219 = 90;
+        %tmp.220 = sub %tmp.218 %tmp.219;
+        lputv %leftX.13 %tmp.220;
+        symbol [ leftX %leftX.13 100 12 17 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 101 8 ]
+        symbol [ _leftSlots %tmp.222 101 8 18 ];
+        %tmp.222 = getv ? :_leftSlots;
+        symbol [ add %tmp.223 101 19 22 ];
+        %tmp.223 = getv function %tmp.222 :add;
+        symbol [ WidgetSlot %tmp.227 101 27 37 ];
+        %tmp.227 = getv ? :WidgetSlot;
+        %tmp.228 = "ENV.DATA";
+        %tmp.229 = self;
+        symbol [ method %tmp.230 101 50 56 ];
+        %tmp.230 = getv function %tmp.229 :method;
+        %tmp.232 = const :_getWeather;
+        symbol [ _getWeather %tmp.232 101 58 69 const ];
+        %tmp.233 = invoke %tmp.229 %tmp.230(%tmp.232);
+        %tmp.234 = newa 2;
+        %tmp.235 = lgetv %leftX.13;
+        symbol [ leftX %tmp.235 101 73 78 ];
+        %tmp.236 = dup %tmp.234;
+        %tmp.237 = aputv %tmp.236 0 %tmp.235;
+        symbol [ _center %tmp.239 101 80 87 ];
+        %tmp.239 = getv ? :_center;
+        %tmp.240 = 1;
+        %tmp.241 = agetv %tmp.239 %tmp.240;
+        %tmp.242 = 18;
+        %tmp.243 = sub %tmp.241 %tmp.242;
+        %tmp.244 = dup %tmp.237;
+        %tmp.245 = aputv %tmp.244 1 %tmp.243;
+        symbol [ _fontLabel %tmp.247 101 98 108 ];
+        %tmp.247 = getv ? :_fontLabel;
+        symbol [ _fontValue %tmp.249 101 110 120 ];
+        %tmp.249 = getv ? :_fontValue;
+        symbol [ COLOR_RED %tmp.251 101 122 131 ];
+        %tmp.251 = getv ? :COLOR_RED;
+        %tmp.224 = newc %tmp.227 (%tmp.228, %tmp.233, %tmp.245, %tmp.247, %tmp.249, %tmp.251);
+        invoke %tmp.222 %tmp.223(%tmp.224);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 102 8 ]
+        symbol [ _leftSlots %tmp.253 102 8 18 ];
+        %tmp.253 = getv ? :_leftSlots;
+        symbol [ add %tmp.254 102 19 22 ];
+        %tmp.254 = getv function %tmp.253 :add;
+        symbol [ WidgetSlot %tmp.258 102 27 37 ];
+        %tmp.258 = getv ? :WidgetSlot;
+        %tmp.259 = "PEDO";
+        %tmp.260 = self;
+        symbol [ method %tmp.261 102 46 52 ];
+        %tmp.261 = getv function %tmp.260 :method;
+        %tmp.263 = const :_getSteps;
+        symbol [ _getSteps %tmp.263 102 54 63 const ];
+        %tmp.264 = invoke %tmp.260 %tmp.261(%tmp.263);
+        %tmp.265 = newa 2;
+        %tmp.266 = lgetv %leftX.13;
+        symbol [ leftX %tmp.266 102 67 72 ];
+        %tmp.267 = dup %tmp.265;
+        %tmp.268 = aputv %tmp.267 0 %tmp.266;
+        symbol [ _center %tmp.270 102 74 81 ];
+        %tmp.270 = getv ? :_center;
+        %tmp.271 = 1;
+        %tmp.272 = agetv %tmp.270 %tmp.271;
+        %tmp.273 = 18;
+        %tmp.274 = add %tmp.272 %tmp.273;
+        %tmp.275 = dup %tmp.268;
+        %tmp.276 = aputv %tmp.275 1 %tmp.274;
+        symbol [ _fontLabel %tmp.278 102 92 102 ];
+        %tmp.278 = getv ? :_fontLabel;
+        symbol [ _fontValue %tmp.280 102 104 114 ];
+        %tmp.280 = getv ? :_fontValue;
+        symbol [ COLOR_RED %tmp.282 102 116 125 ];
+        %tmp.282 = getv ? :COLOR_RED;
+        %tmp.255 = newc %tmp.258 (%tmp.259, %tmp.264, %tmp.276, %tmp.278, %tmp.280, %tmp.282);
+        invoke %tmp.253 %tmp.254(%tmp.255);
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_62_26_103_4_stop:
+    }
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 105; @symbol_functiondef = [onUpdate,105,13,21]; @symbol_param<0> = [dc,105,22,24]; ]
+    function onUpdate(dc) {
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_105_26_130_4_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 106 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_105_26_130_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_105_26_130_4_stop" ]
+        %amInfo.1 = local;
+        symbol [ amInfo %amInfo.1 106 12 18 ];
+        symbol [ AM %tmp.1 106 21 23 ];
+        %tmp.1 = getm $.Toybox.ActivityMonitor;
+        symbol [ getInfo %tmp.2 106 24 31 ];
+        %tmp.2 = getv function %tmp.1 :getInfo;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %amInfo.1 %tmp.3;
+        symbol [ amInfo %amInfo.1 106 12 18 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 108 8 ]
+        %tmp.4 = lgetv %dc;
+        symbol [ dc %tmp.4 108 8 10 ];
+        symbol [ setColor %tmp.5 108 11 19 ];
+        %tmp.5 = getv function %tmp.4 :setColor;
+        symbol [ G %tmp.6 108 20 21 ];
+        %tmp.6 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.7 108 22 33 ];
+        %tmp.7 = getv %tmp.6 :COLOR_BLACK;
+        symbol [ G %tmp.8 108 35 36 ];
+        %tmp.8 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.9 108 37 48 ];
+        %tmp.9 = getv %tmp.8 :COLOR_BLACK;
+        invoke %tmp.4 %tmp.5(%tmp.7, %tmp.9);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 109 8 ]
+        %tmp.10 = lgetv %dc;
+        symbol [ dc %tmp.10 109 8 10 ];
+        symbol [ clear %tmp.11 109 11 16 ];
+        %tmp.11 = getv function %tmp.10 :clear;
+        invoke %tmp.10 %tmp.11();
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 111 8 ]
+        %tmp.12 = self;
+        symbol [ _drawGrid %tmp.13 111 8 17 ];
+        %tmp.13 = getv function %tmp.12 :_drawGrid;
+        %tmp.14 = lgetv %dc;
+        symbol [ dc %tmp.14 111 18 20 ];
+        invoke %tmp.12 %tmp.13(%tmp.14);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 112 8 ]
+        %tmp.15 = self;
+        symbol [ _drawDecor %tmp.16 112 8 18 ];
+        %tmp.16 = getv function %tmp.15 :_drawDecor;
+        %tmp.17 = lgetv %dc;
+        symbol [ dc %tmp.17 112 19 21 ];
+        invoke %tmp.15 %tmp.16(%tmp.17);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 113 8 ]
+        %tmp.18 = self;
+        symbol [ _drawDayArc %tmp.19 113 8 19 ];
+        %tmp.19 = getv function %tmp.18 :_drawDayArc;
+        %tmp.20 = lgetv %dc;
+        symbol [ dc %tmp.20 113 20 22 ];
+        invoke %tmp.18 %tmp.19(%tmp.20);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 114 8 ]
+        %tmp.21 = self;
+        symbol [ _drawStepArc %tmp.22 114 8 20 ];
+        %tmp.22 = getv function %tmp.21 :_drawStepArc;
+        %tmp.23 = lgetv %dc;
+        symbol [ dc %tmp.23 114 21 23 ];
+        %tmp.24 = lgetv %amInfo.1;
+        symbol [ amInfo %tmp.24 114 25 31 ];
+        invoke %tmp.21 %tmp.22(%tmp.23, %tmp.24);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 115 8 ]
+        %tmp.25 = self;
+        symbol [ _drawTopBar %tmp.26 115 8 19 ];
+        %tmp.26 = getv function %tmp.25 :_drawTopBar;
+        %tmp.27 = lgetv %dc;
+        symbol [ dc %tmp.27 115 20 22 ];
+        invoke %tmp.25 %tmp.26(%tmp.27);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 116 8 ]
+        %tmp.28 = self;
+        symbol [ _drawBottomBar %tmp.29 116 8 22 ];
+        %tmp.29 = getv function %tmp.28 :_drawBottomBar;
+        %tmp.30 = lgetv %dc;
+        symbol [ dc %tmp.30 116 23 25 ];
+        %tmp.31 = lgetv %amInfo.1;
+        symbol [ amInfo %tmp.31 116 27 33 ];
+        invoke %tmp.28 %tmp.29(%tmp.30, %tmp.31);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 118 8 ]
+        for @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_118_8_120_8_for_test @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_118_8_120_8_for_incr @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_118_8_120_8_for_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_118_8_120_8_for_init:
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_118_8_120_8_for_begin" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_118_8_120_8_for_end" ]
+        %i.2 = local;
+        symbol [ i %i.2 118 17 18 ];
+        %tmp.32 = 0;
+        lputv %i.2 %tmp.32;
+        symbol [ i %i.2 118 17 18 ];
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_118_8_120_8_for_test:
+        %tmp.33 = lgetv %i.2;
+        symbol [ i %tmp.33 118 24 25 ];
+        symbol [ _topSlots %tmp.35 118 28 37 ];
+        %tmp.35 = getv ? :_topSlots;
+        symbol [ size %tmp.36 118 38 42 ];
+        %tmp.36 = getv function %tmp.35 :size;
+        %tmp.37 = invoke %tmp.35 %tmp.36();
+        %tmp.38 = lt %tmp.33 %tmp.37;
+        bf %tmp.38 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_118_8_120_8_for_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_118_8_120_8_for_begin:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_118_51_120_8_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 119 12 ]
+        symbol [ _topSlots %tmp.40 119 12 21 ];
+        %tmp.40 = getv ? :_topSlots;
+        %tmp.41 = lgetv %i.2;
+        symbol [ i %tmp.41 119 22 23 ];
+        %tmp.42 = agetv %tmp.40 %tmp.41;
+        symbol [ draw %tmp.43 119 25 29 ];
+        %tmp.43 = getv function %tmp.42 :draw;
+        %tmp.44 = lgetv %dc;
+        symbol [ dc %tmp.44 119 30 32 ];
+        invoke %tmp.42 %tmp.43(%tmp.44);
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_118_51_120_8_stop:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_118_8_120_8_for_incr:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 118 ]
+        %tmp.47 = lgetv %i.2;
+        symbol [ i %tmp.47 118 46 47 ];
+        %tmp.48 = add %tmp.47 1;
+        lputv %i.2 %tmp.48;
+        symbol [ i %i.2 118 46 47 ];
+        goto @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_118_8_120_8_for_test;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_118_8_120_8_for_end:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 121 8 ]
+        for @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_121_8_123_8_for_test @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_121_8_123_8_for_incr @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_121_8_123_8_for_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_121_8_123_8_for_init:
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_121_8_123_8_for_begin" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_121_8_123_8_for_end" ]
+        %j.3 = local;
+        symbol [ j %j.3 121 17 18 ];
+        %tmp.49 = 0;
+        lputv %j.3 %tmp.49;
+        symbol [ j %j.3 121 17 18 ];
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_121_8_123_8_for_test:
+        %tmp.50 = lgetv %j.3;
+        symbol [ j %tmp.50 121 24 25 ];
+        symbol [ _bottomSlots %tmp.52 121 28 40 ];
+        %tmp.52 = getv ? :_bottomSlots;
+        symbol [ size %tmp.53 121 41 45 ];
+        %tmp.53 = getv function %tmp.52 :size;
+        %tmp.54 = invoke %tmp.52 %tmp.53();
+        %tmp.55 = lt %tmp.50 %tmp.54;
+        bf %tmp.55 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_121_8_123_8_for_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_121_8_123_8_for_begin:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_121_54_123_8_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 122 12 ]
+        symbol [ _bottomSlots %tmp.57 122 12 24 ];
+        %tmp.57 = getv ? :_bottomSlots;
+        %tmp.58 = lgetv %j.3;
+        symbol [ j %tmp.58 122 25 26 ];
+        %tmp.59 = agetv %tmp.57 %tmp.58;
+        symbol [ draw %tmp.60 122 28 32 ];
+        %tmp.60 = getv function %tmp.59 :draw;
+        %tmp.61 = lgetv %dc;
+        symbol [ dc %tmp.61 122 33 35 ];
+        invoke %tmp.59 %tmp.60(%tmp.61);
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_121_54_123_8_stop:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_121_8_123_8_for_incr:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 121 ]
+        %tmp.64 = lgetv %j.3;
+        symbol [ j %tmp.64 121 49 50 ];
+        %tmp.65 = add %tmp.64 1;
+        lputv %j.3 %tmp.65;
+        symbol [ j %j.3 121 49 50 ];
+        goto @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_121_8_123_8_for_test;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_121_8_123_8_for_end:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 124 8 ]
+        for @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_124_8_126_8_for_test @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_124_8_126_8_for_incr @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_124_8_126_8_for_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_124_8_126_8_for_init:
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_124_8_126_8_for_begin" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_124_8_126_8_for_end" ]
+        %k.4 = local;
+        symbol [ k %k.4 124 17 18 ];
+        %tmp.66 = 0;
+        lputv %k.4 %tmp.66;
+        symbol [ k %k.4 124 17 18 ];
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_124_8_126_8_for_test:
+        %tmp.67 = lgetv %k.4;
+        symbol [ k %tmp.67 124 24 25 ];
+        symbol [ _leftSlots %tmp.69 124 28 38 ];
+        %tmp.69 = getv ? :_leftSlots;
+        symbol [ size %tmp.70 124 39 43 ];
+        %tmp.70 = getv function %tmp.69 :size;
+        %tmp.71 = invoke %tmp.69 %tmp.70();
+        %tmp.72 = lt %tmp.67 %tmp.71;
+        bf %tmp.72 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_124_8_126_8_for_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_124_8_126_8_for_begin:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_124_52_126_8_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 125 12 ]
+        symbol [ _leftSlots %tmp.74 125 12 22 ];
+        %tmp.74 = getv ? :_leftSlots;
+        %tmp.75 = lgetv %k.4;
+        symbol [ k %tmp.75 125 23 24 ];
+        %tmp.76 = agetv %tmp.74 %tmp.75;
+        symbol [ draw %tmp.77 125 26 30 ];
+        %tmp.77 = getv function %tmp.76 :draw;
+        %tmp.78 = lgetv %dc;
+        symbol [ dc %tmp.78 125 31 33 ];
+        invoke %tmp.76 %tmp.77(%tmp.78);
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_124_52_126_8_stop:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_124_8_126_8_for_incr:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 124 ]
+        %tmp.81 = lgetv %k.4;
+        symbol [ k %tmp.81 124 47 48 ];
+        %tmp.82 = add %tmp.81 1;
+        lputv %k.4 %tmp.82;
+        symbol [ k %k.4 124 47 48 ];
+        goto @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_124_8_126_8_for_test;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_124_8_126_8_for_end:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 128 8 ]
+        %tmp.83 = self;
+        symbol [ _drawCenterTime %tmp.84 128 8 23 ];
+        %tmp.84 = getv function %tmp.83 :_drawCenterTime;
+        %tmp.85 = lgetv %dc;
+        symbol [ dc %tmp.85 128 24 26 ];
+        invoke %tmp.83 %tmp.84(%tmp.85);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 129 8 ]
+        %tmp.86 = self;
+        symbol [ _drawFooter %tmp.87 129 8 19 ];
+        %tmp.87 = getv function %tmp.86 :_drawFooter;
+        %tmp.88 = lgetv %dc;
+        symbol [ dc %tmp.88 129 20 22 ];
+        invoke %tmp.86 %tmp.87(%tmp.88);
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_105_26_130_4_stop:
+    }
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 133; @symbol_functiondef = [_getHeartRate,133,13,26]; ]
+    function _getHeartRate() {
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_133_29_142_4_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 134 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_133_29_142_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_133_29_142_4_stop" ]
+        %info.1 = local;
+        symbol [ info %info.1 134 12 16 ];
+        symbol [ AM %tmp.1 134 19 21 ];
+        %tmp.1 = getm $.Toybox.ActivityMonitor;
+        symbol [ getInfo %tmp.2 134 22 29 ];
+        %tmp.2 = getv function %tmp.1 :getInfo;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %info.1 %tmp.3;
+        symbol [ info %info.1 134 12 16 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 135 8 ]
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_135_8_137_8_if_stmt:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_135_12_135_85_begin:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_135_12_135_55_begin:
+        %tmp.4 = lgetv %info.1;
+        symbol [ info %tmp.4 135 12 16 ];
+        %tmp.5 = null;
+        %tmp.6 = ne %tmp.4 %tmp.5;
+        bf %tmp.6 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_135_8_137_8_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_135_28_135_55_true:
+        %tmp.7 = lgetv %info.1;
+        symbol [ info %tmp.7 135 29 33 ];
+        %tmp.8 = as %tmp.7 { (!Null) };
+        %tmp.10 = const :currentHeartRate;
+        symbol [ currentHeartRate %tmp.10 135 39 55 const ];
+        %tmp.11 = canhazplz %tmp.8 %tmp.10;
+        push %tmp.11;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_135_28_135_55_end:
+        %tmp.12 = phi [%tmp.6 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_135_12_135_55_begin] [%tmp.11 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_135_28_135_55_true] [%tmp.12 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_135_28_135_55_end];
+        bf %tmp.12 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_135_8_137_8_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_135_60_135_85_true:
+        %tmp.13 = lgetv %info.1;
+        symbol [ info %tmp.13 135 60 64 ];
+        %tmp.14 = as %tmp.13 { (!Null) && (interface { var currentHeartRate; }) };
+        symbol [ currentHeartRate %tmp.15 135 65 81 ];
+        %tmp.15 = getv %tmp.14 :currentHeartRate;
+        %tmp.16 = null;
+        %tmp.17 = ne %tmp.15 %tmp.16;
+        push %tmp.17;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_135_60_135_85_end:
+        %tmp.18 = phi [%tmp.12 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_135_12_135_85_begin] [%tmp.17 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_135_60_135_85_true] [%tmp.18 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_135_60_135_85_end];
+        bf %tmp.18 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_135_8_137_8_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_135_8_137_8_if_true:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_135_91_137_8_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 136 12 ]
+        symbol [ Lang %tmp.19 136 19 23 ];
+        %tmp.19 = getm $.Toybox.Lang;
+        symbol [ format %tmp.20 136 24 30 ];
+        %tmp.20 = getv function %tmp.19 :format;
+        %tmp.21 = "%d bpm";
+        %tmp.22 = newa 1;
+        %tmp.23 = lgetv %info.1;
+        symbol [ info %tmp.23 136 42 46 ];
+        %tmp.24 = as %tmp.23 { (!Null) && (interface { var currentHeartRate; }) };
+        symbol [ currentHeartRate %tmp.25 136 47 63 ];
+        %tmp.25 = getv %tmp.24 :currentHeartRate;
+        %tmp.26 = dup %tmp.22;
+        %tmp.27 = aputv %tmp.26 0 %tmp.25;
+        %tmp.28 = invoke %tmp.19 %tmp.20(%tmp.21, %tmp.27);
+        ret %tmp.28;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_135_91_137_8_stop:
+        goto @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_135_8_137_8_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_135_8_137_8_if_end:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 138 8 ]
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_138_8_140_8_if_stmt:
+        symbol [ MOCK_MODE %tmp.30 138 12 21 ];
+        %tmp.30 = getv ? :MOCK_MODE;
+        bf %tmp.30 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_138_8_140_8_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_138_8_140_8_if_true:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_138_23_140_8_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 139 12 ]
+        %tmp.31 = "164 bpm";
+        ret %tmp.31;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_138_23_140_8_stop:
+        goto @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_138_8_140_8_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_138_8_140_8_if_end:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 141 8 ]
+        %tmp.32 = "-- bpm";
+        ret %tmp.32;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_133_29_142_4_stop:
+    }
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 144; @symbol_functiondef = [_getSteps,144,13,22]; ]
+    function _getSteps() {
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_144_25_153_4_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 145 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_144_25_153_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_144_25_153_4_stop" ]
+        %info.1 = local;
+        symbol [ info %info.1 145 12 16 ];
+        symbol [ AM %tmp.1 145 19 21 ];
+        %tmp.1 = getm $.Toybox.ActivityMonitor;
+        symbol [ getInfo %tmp.2 145 22 29 ];
+        %tmp.2 = getv function %tmp.1 :getInfo;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %info.1 %tmp.3;
+        symbol [ info %info.1 145 12 16 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 146 8 ]
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_146_8_148_8_if_stmt:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_146_12_146_42_begin:
+        %tmp.4 = lgetv %info.1;
+        symbol [ info %tmp.4 146 12 16 ];
+        %tmp.5 = null;
+        %tmp.6 = ne %tmp.4 %tmp.5;
+        bf %tmp.6 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_146_8_148_8_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_146_28_146_42_true:
+        %tmp.7 = lgetv %info.1;
+        symbol [ info %tmp.7 146 28 32 ];
+        %tmp.8 = as %tmp.7 { (!Null) };
+        symbol [ steps %tmp.9 146 33 38 ];
+        %tmp.9 = getv %tmp.8 :steps;
+        %tmp.10 = null;
+        %tmp.11 = ne %tmp.9 %tmp.10;
+        push %tmp.11;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_146_28_146_42_end:
+        %tmp.12 = phi [%tmp.6 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_146_12_146_42_begin] [%tmp.11 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_146_28_146_42_true] [%tmp.12 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_146_28_146_42_end];
+        bf %tmp.12 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_146_8_148_8_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_146_8_148_8_if_true:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_146_48_148_8_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 147 12 ]
+        symbol [ Lang %tmp.13 147 19 23 ];
+        %tmp.13 = getm $.Toybox.Lang;
+        symbol [ format %tmp.14 147 24 30 ];
+        %tmp.14 = getv function %tmp.13 :format;
+        %tmp.15 = "%d";
+        %tmp.16 = newa 1;
+        %tmp.17 = lgetv %info.1;
+        symbol [ info %tmp.17 147 38 42 ];
+        %tmp.18 = as %tmp.17 { (!Null) };
+        symbol [ steps %tmp.19 147 43 48 ];
+        %tmp.19 = getv %tmp.18 :steps;
+        %tmp.20 = dup %tmp.16;
+        %tmp.21 = aputv %tmp.20 0 %tmp.19;
+        %tmp.22 = invoke %tmp.13 %tmp.14(%tmp.15, %tmp.21);
+        ret %tmp.22;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_146_48_148_8_stop:
+        goto @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_146_8_148_8_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_146_8_148_8_if_end:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 149 8 ]
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_149_8_151_8_if_stmt:
+        symbol [ MOCK_MODE %tmp.24 149 12 21 ];
+        %tmp.24 = getv ? :MOCK_MODE;
+        bf %tmp.24 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_149_8_151_8_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_149_8_151_8_if_true:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_149_23_151_8_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 150 12 ]
+        %tmp.25 = "7156";
+        ret %tmp.25;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_149_23_151_8_stop:
+        goto @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_149_8_151_8_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_149_8_151_8_if_end:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 152 8 ]
+        %tmp.26 = "--";
+        ret %tmp.26;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_144_25_153_4_stop:
+    }
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 155; @symbol_functiondef = [_getStepsShort,155,13,27]; ]
+    function _getStepsShort() {
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_155_30_168_4_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 156 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_155_30_168_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_155_30_168_4_stop" ]
+        %info.1 = local;
+        symbol [ info %info.1 156 12 16 ];
+        symbol [ AM %tmp.1 156 19 21 ];
+        %tmp.1 = getm $.Toybox.ActivityMonitor;
+        symbol [ getInfo %tmp.2 156 22 29 ];
+        %tmp.2 = getv function %tmp.1 :getInfo;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %info.1 %tmp.3;
+        symbol [ info %info.1 156 12 16 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 157 8 ]
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_157_8_163_8_if_stmt:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_157_12_157_42_begin:
+        %tmp.4 = lgetv %info.1;
+        symbol [ info %tmp.4 157 12 16 ];
+        %tmp.5 = null;
+        %tmp.6 = ne %tmp.4 %tmp.5;
+        bf %tmp.6 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_157_8_163_8_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_157_28_157_42_true:
+        %tmp.7 = lgetv %info.1;
+        symbol [ info %tmp.7 157 28 32 ];
+        %tmp.8 = as %tmp.7 { (!Null) };
+        symbol [ steps %tmp.9 157 33 38 ];
+        %tmp.9 = getv %tmp.8 :steps;
+        %tmp.10 = null;
+        %tmp.11 = ne %tmp.9 %tmp.10;
+        push %tmp.11;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_157_28_157_42_end:
+        %tmp.12 = phi [%tmp.6 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_157_12_157_42_begin] [%tmp.11 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_157_28_157_42_true] [%tmp.12 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_157_28_157_42_end];
+        bf %tmp.12 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_157_8_163_8_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_157_8_163_8_if_true:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_157_48_163_8_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 158 12 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_157_48_163_8_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_157_48_163_8_stop" ]
+        %pct.2 = local;
+        symbol [ pct %pct.2 158 16 19 ];
+        %tmp.13 = lgetv %info.1;
+        symbol [ info %tmp.13 158 23 27 ];
+        %tmp.14 = as %tmp.13 { (!Null) };
+        symbol [ steps %tmp.15 158 28 33 ];
+        %tmp.15 = getv %tmp.14 :steps;
+        %tmp.16 = 100.0;
+        %tmp.17 = mul %tmp.15 %tmp.16;
+        symbol [ STEP_GOAL %tmp.19 158 45 54 ];
+        %tmp.19 = getv ? :STEP_GOAL;
+        %tmp.20 = div %tmp.17 %tmp.19;
+        lputv %pct.2 %tmp.20;
+        symbol [ pct %pct.2 158 16 19 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 159 12 ]
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_159_12_161_12_if_stmt:
+        %tmp.21 = lgetv %pct.2;
+        symbol [ pct %tmp.21 159 16 19 ];
+        %tmp.22 = 100;
+        %tmp.23 = gt %tmp.21 %tmp.22;
+        bf %tmp.23 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_159_12_161_12_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_159_12_161_12_if_true:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_159_27_161_12_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 160 16 ]
+        %tmp.24 = 100;
+        lputv %pct.2 %tmp.24;
+        symbol [ pct %pct.2 160 16 19 ];
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_159_27_161_12_stop:
+        goto @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_159_12_161_12_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_159_12_161_12_if_end:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 162 12 ]
+        symbol [ Lang %tmp.25 162 19 23 ];
+        %tmp.25 = getm $.Toybox.Lang;
+        symbol [ format %tmp.26 162 24 30 ];
+        %tmp.26 = getv function %tmp.25 :format;
+        %tmp.27 = "%d%%";
+        %tmp.28 = newa 1;
+        symbol [ Math %tmp.29 162 40 44 ];
+        %tmp.29 = getm $.Toybox.Math;
+        symbol [ round %tmp.30 162 45 50 ];
+        %tmp.30 = getv function %tmp.29 :round;
+        %tmp.31 = lgetv %pct.2;
+        symbol [ pct %tmp.31 162 51 54 ];
+        %tmp.32 = invoke %tmp.29 %tmp.30(%tmp.31);
+        %tmp.33 = dup %tmp.28;
+        %tmp.34 = aputv %tmp.33 0 %tmp.32;
+        %tmp.35 = invoke %tmp.25 %tmp.26(%tmp.27, %tmp.34);
+        ret %tmp.35;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_157_48_163_8_stop:
+        goto @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_157_8_163_8_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_157_8_163_8_if_end:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 164 8 ]
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_164_8_166_8_if_stmt:
+        symbol [ MOCK_MODE %tmp.37 164 12 21 ];
+        %tmp.37 = getv ? :MOCK_MODE;
+        bf %tmp.37 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_164_8_166_8_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_164_8_166_8_if_true:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_164_23_166_8_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 165 12 ]
+        %tmp.38 = "72%";
+        ret %tmp.38;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_164_23_166_8_stop:
+        goto @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_164_8_166_8_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_164_8_166_8_if_end:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 167 8 ]
+        %tmp.39 = "--";
+        ret %tmp.39;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_155_30_168_4_stop:
+    }
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 170; @symbol_functiondef = [_getBattery,170,13,24]; ]
+    function _getBattery() {
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_170_27_173_4_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 171 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_170_27_173_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_170_27_173_4_stop" ]
+        %stats.1 = local;
+        symbol [ stats %stats.1 171 12 17 ];
+        symbol [ Sys %tmp.1 171 20 23 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ getSystemStats %tmp.2 171 24 38 ];
+        %tmp.2 = getv function %tmp.1 :getSystemStats;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %stats.1 %tmp.3;
+        symbol [ stats %stats.1 171 12 17 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 172 8 ]
+        symbol [ Lang %tmp.4 172 15 19 ];
+        %tmp.4 = getm $.Toybox.Lang;
+        symbol [ format %tmp.5 172 20 26 ];
+        %tmp.5 = getv function %tmp.4 :format;
+        %tmp.6 = "%d%%";
+        %tmp.7 = newa 1;
+        %tmp.8 = lgetv %stats.1;
+        symbol [ stats %tmp.8 172 36 41 ];
+        symbol [ battery %tmp.9 172 42 49 ];
+        %tmp.9 = getv %tmp.8 :battery;
+        %tmp.10 = dup %tmp.7;
+        %tmp.11 = aputv %tmp.10 0 %tmp.9;
+        %tmp.12 = invoke %tmp.4 %tmp.5(%tmp.6, %tmp.11);
+        ret %tmp.12;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_170_27_173_4_stop:
+    }
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 175; @symbol_functiondef = [_getBatteryPct,175,13,27]; ]
+    function _getBatteryPct() {
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_175_30_181_4_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 176 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_175_30_181_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_175_30_181_4_stop" ]
+        %stats.1 = local;
+        symbol [ stats %stats.1 176 12 17 ];
+        symbol [ Sys %tmp.1 176 20 23 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ getSystemStats %tmp.2 176 24 38 ];
+        %tmp.2 = getv function %tmp.1 :getSystemStats;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %stats.1 %tmp.3;
+        symbol [ stats %stats.1 176 12 17 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 177 8 ]
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_177_8_179_8_if_stmt:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_177_12_177_46_begin:
+        %tmp.4 = lgetv %stats.1;
+        symbol [ stats %tmp.4 177 12 17 ];
+        %tmp.5 = null;
+        %tmp.6 = ne %tmp.4 %tmp.5;
+        bf %tmp.6 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_177_8_179_8_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_177_29_177_46_true:
+        %tmp.7 = lgetv %stats.1;
+        symbol [ stats %tmp.7 177 29 34 ];
+        %tmp.8 = as %tmp.7 { (!Null) };
+        symbol [ battery %tmp.9 177 35 42 ];
+        %tmp.9 = getv %tmp.8 :battery;
+        %tmp.10 = null;
+        %tmp.11 = ne %tmp.9 %tmp.10;
+        push %tmp.11;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_177_29_177_46_end:
+        %tmp.12 = phi [%tmp.6 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_177_12_177_46_begin] [%tmp.11 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_177_29_177_46_true] [%tmp.12 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_177_29_177_46_end];
+        bf %tmp.12 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_177_8_179_8_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_177_8_179_8_if_true:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_177_52_179_8_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 178 12 ]
+        %tmp.13 = lgetv %stats.1;
+        symbol [ stats %tmp.13 178 19 24 ];
+        %tmp.14 = as %tmp.13 { (!Null) };
+        symbol [ battery %tmp.15 178 25 32 ];
+        %tmp.15 = getv %tmp.14 :battery;
+        ret %tmp.15;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_177_52_179_8_stop:
+        goto @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_177_8_179_8_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_177_8_179_8_if_end:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 180 8 ]
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_180_15_180_32_begin:
+        symbol [ MOCK_MODE %tmp.17 180 15 24 ];
+        %tmp.17 = getv ? :MOCK_MODE;
+        bf %tmp.17 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_180_15_180_32_else_false;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_180_15_180_32_true:
+        %tmp.18 = 87;
+        push %tmp.18;
+        goto @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_180_15_180_32_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_180_15_180_32_else_false:
+        %tmp.19 = 0;
+        push %tmp.19;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_180_15_180_32_end:
+        %tmp.20 = phi [%tmp.17 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_180_15_180_32_begin] [%tmp.18 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_180_15_180_32_true] [%tmp.19 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_180_15_180_32_else_false] [%tmp.20 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_180_15_180_32_end];
+        ret %tmp.20;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_175_30_181_4_stop:
+    }
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 183; @symbol_functiondef = [_getDateShort,183,13,26]; ]
+    function _getDateShort() {
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_183_29_186_4_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 184 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_183_29_186_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_183_29_186_4_stop" ]
+        %info.1 = local;
+        symbol [ info %info.1 184 12 16 ];
+        symbol [ Time %tmp.1 184 19 23 ];
+        %tmp.1 = getm $.Toybox.Time;
+        symbol [ Gregorian %tmp.2 184 24 33 ];
+        %tmp.2 = getv %tmp.1 :Gregorian;
+        symbol [ info %tmp.3 184 34 38 ];
+        %tmp.3 = getv function %tmp.2 :info;
+        symbol [ Time %tmp.4 184 39 43 ];
+        %tmp.4 = getm $.Toybox.Time;
+        symbol [ now %tmp.5 184 44 47 ];
+        %tmp.5 = getv function %tmp.4 :now;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        symbol [ Time %tmp.7 184 51 55 ];
+        %tmp.7 = getm $.Toybox.Time;
+        symbol [ FORMAT_SHORT %tmp.8 184 56 68 ];
+        %tmp.8 = getv %tmp.7 :FORMAT_SHORT;
+        %tmp.9 = invoke %tmp.2 %tmp.3(%tmp.6, %tmp.8);
+        lputv %info.1 %tmp.9;
+        symbol [ info %info.1 184 12 16 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 185 8 ]
+        symbol [ Lang %tmp.10 185 15 19 ];
+        %tmp.10 = getm $.Toybox.Lang;
+        symbol [ format %tmp.11 185 20 26 ];
+        %tmp.11 = getv function %tmp.10 :format;
+        %tmp.12 = "%02d/%02d";
+        %tmp.13 = newa 2;
+        %tmp.14 = lgetv %info.1;
+        symbol [ info %tmp.14 185 41 45 ];
+        symbol [ day %tmp.15 185 46 49 ];
+        %tmp.15 = getv %tmp.14 :day;
+        %tmp.16 = dup %tmp.13;
+        %tmp.17 = aputv %tmp.16 0 %tmp.15;
+        %tmp.18 = lgetv %info.1;
+        symbol [ info %tmp.18 185 51 55 ];
+        symbol [ month %tmp.19 185 56 61 ];
+        %tmp.19 = getv %tmp.18 :month;
+        %tmp.20 = dup %tmp.17;
+        %tmp.21 = aputv %tmp.20 1 %tmp.19;
+        %tmp.22 = invoke %tmp.10 %tmp.11(%tmp.12, %tmp.21);
+        ret %tmp.22;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_183_29_186_4_stop:
+    }
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 188; @symbol_functiondef = [_getCalories,188,13,25]; ]
+    function _getCalories() {
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_188_28_194_4_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 189 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_188_28_194_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_188_28_194_4_stop" ]
+        %info.1 = local;
+        symbol [ info %info.1 189 12 16 ];
+        symbol [ AM %tmp.1 189 19 21 ];
+        %tmp.1 = getm $.Toybox.ActivityMonitor;
+        symbol [ getInfo %tmp.2 189 22 29 ];
+        %tmp.2 = getv function %tmp.1 :getInfo;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %info.1 %tmp.3;
+        symbol [ info %info.1 189 12 16 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 190 8 ]
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_190_8_192_8_if_stmt:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_190_12_190_45_begin:
+        %tmp.4 = lgetv %info.1;
+        symbol [ info %tmp.4 190 12 16 ];
+        %tmp.5 = null;
+        %tmp.6 = ne %tmp.4 %tmp.5;
+        bf %tmp.6 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_190_8_192_8_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_190_28_190_45_true:
+        %tmp.7 = lgetv %info.1;
+        symbol [ info %tmp.7 190 28 32 ];
+        %tmp.8 = as %tmp.7 { (!Null) };
+        symbol [ calories %tmp.9 190 33 41 ];
+        %tmp.9 = getv %tmp.8 :calories;
+        %tmp.10 = null;
+        %tmp.11 = ne %tmp.9 %tmp.10;
+        push %tmp.11;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_190_28_190_45_end:
+        %tmp.12 = phi [%tmp.6 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_190_12_190_45_begin] [%tmp.11 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_190_28_190_45_true] [%tmp.12 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_190_28_190_45_end];
+        bf %tmp.12 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_190_8_192_8_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_190_8_192_8_if_true:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_190_51_192_8_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 191 12 ]
+        symbol [ Lang %tmp.13 191 19 23 ];
+        %tmp.13 = getm $.Toybox.Lang;
+        symbol [ format %tmp.14 191 24 30 ];
+        %tmp.14 = getv function %tmp.13 :format;
+        %tmp.15 = "%d kcal";
+        %tmp.16 = newa 1;
+        %tmp.17 = lgetv %info.1;
+        symbol [ info %tmp.17 191 43 47 ];
+        %tmp.18 = as %tmp.17 { (!Null) };
+        symbol [ calories %tmp.19 191 48 56 ];
+        %tmp.19 = getv %tmp.18 :calories;
+        %tmp.20 = dup %tmp.16;
+        %tmp.21 = aputv %tmp.20 0 %tmp.19;
+        %tmp.22 = invoke %tmp.13 %tmp.14(%tmp.15, %tmp.21);
+        ret %tmp.22;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_190_51_192_8_stop:
+        goto @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_190_8_192_8_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_190_8_192_8_if_end:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 193 8 ]
+        %tmp.23 = "kcal --";
+        ret %tmp.23;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_188_28_194_4_stop:
+    }
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 196; @symbol_functiondef = [_getHumidity,196,13,25]; ]
+    function _getHumidity() {
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_196_28_201_4_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 197 8 ]
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_197_8_199_8_if_stmt:
+        symbol [ MOCK_MODE %tmp.2 197 12 21 ];
+        %tmp.2 = getv ? :MOCK_MODE;
+        bf %tmp.2 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_197_8_199_8_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_197_8_199_8_if_true:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_197_23_199_8_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 198 12 ]
+        %tmp.3 = "45%";
+        ret %tmp.3;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_197_23_199_8_stop:
+        goto @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_197_8_199_8_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_197_8_199_8_if_end:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 200 8 ]
+        %tmp.4 = "45%";
+        ret %tmp.4;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_196_28_201_4_stop:
+    }
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 203; @symbol_functiondef = [_getHumidityPct,203,13,28]; ]
+    function _getHumidityPct() {
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_203_31_208_4_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 204 8 ]
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_204_8_206_8_if_stmt:
+        symbol [ MOCK_MODE %tmp.2 204 12 21 ];
+        %tmp.2 = getv ? :MOCK_MODE;
+        bf %tmp.2 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_204_8_206_8_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_204_8_206_8_if_true:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_204_23_206_8_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 205 12 ]
+        %tmp.3 = 45;
+        ret %tmp.3;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_204_23_206_8_stop:
+        goto @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_204_8_206_8_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_204_8_206_8_if_end:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 207 8 ]
+        %tmp.4 = 45;
+        ret %tmp.4;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_203_31_208_4_stop:
+    }
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 210; @symbol_functiondef = [_getWeather,210,13,24]; ]
+    function _getWeather() {
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_210_27_215_4_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 211 8 ]
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_211_8_213_8_if_stmt:
+        symbol [ MOCK_MODE %tmp.2 211 12 21 ];
+        %tmp.2 = getv ? :MOCK_MODE;
+        bf %tmp.2 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_211_8_213_8_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_211_8_213_8_if_true:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_211_23_213_8_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 212 12 ]
+        %tmp.3 = "24°C";
+        ret %tmp.3;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_211_23_213_8_stop:
+        goto @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_211_8_213_8_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_211_8_213_8_if_end:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 214 8 ]
+        %tmp.4 = "22°C";
+        ret %tmp.4;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_210_27_215_4_stop:
+    }
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 217; @symbol_functiondef = [_getNotifications,217,13,30]; ]
+    function _getNotifications() {
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_217_33_219_4_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 218 8 ]
+        %tmp.1 = "MSG";
+        ret %tmp.1;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_217_33_219_4_stop:
+    }
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 222; @symbol_functiondef = [_polar,222,13,19]; @symbol_param<0> = [radius,222,20,26]; @symbol_param<1> = [deg,222,28,31]; ]
+    function _polar(radius, deg) {
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_222_33_228_4_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 223 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_222_33_228_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_222_33_228_4_stop" ]
+        %rad.1 = local;
+        symbol [ rad %rad.1 223 12 15 ];
+        %tmp.1 = lgetv %deg;
+        symbol [ deg %tmp.1 223 18 21 ];
+        symbol [ Math %tmp.2 223 24 28 ];
+        %tmp.2 = getm $.Toybox.Math;
+        symbol [ PI %tmp.3 223 29 31 ];
+        %tmp.3 = getv %tmp.2 :PI;
+        %tmp.4 = mul %tmp.1 %tmp.3;
+        %tmp.5 = 180.0;
+        %tmp.6 = div %tmp.4 %tmp.5;
+        lputv %rad.1 %tmp.6;
+        symbol [ rad %rad.1 223 12 15 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 224 8 ]
+        %tmp.7 = newa 2;
+        symbol [ _center %tmp.9 225 12 19 ];
+        %tmp.9 = getv ? :_center;
+        %tmp.10 = 0;
+        %tmp.11 = agetv %tmp.9 %tmp.10;
+        symbol [ Math %tmp.12 225 25 29 ];
+        %tmp.12 = getm $.Toybox.Math;
+        symbol [ round %tmp.13 225 30 35 ];
+        %tmp.13 = getv function %tmp.12 :round;
+        %tmp.14 = lgetv %radius;
+        symbol [ radius %tmp.14 225 36 42 ];
+        symbol [ Math %tmp.15 225 45 49 ];
+        %tmp.15 = getm $.Toybox.Math;
+        symbol [ cos %tmp.16 225 50 53 ];
+        %tmp.16 = getv function %tmp.15 :cos;
+        %tmp.17 = lgetv %rad.1;
+        symbol [ rad %tmp.17 225 54 57 ];
+        %tmp.18 = invoke %tmp.15 %tmp.16(%tmp.17);
+        %tmp.19 = mul %tmp.14 %tmp.18;
+        %tmp.20 = invoke %tmp.12 %tmp.13(%tmp.19);
+        %tmp.21 = add %tmp.11 %tmp.20;
+        %tmp.22 = dup %tmp.7;
+        %tmp.23 = aputv %tmp.22 0 %tmp.21;
+        symbol [ _center %tmp.25 226 12 19 ];
+        %tmp.25 = getv ? :_center;
+        %tmp.26 = 1;
+        %tmp.27 = agetv %tmp.25 %tmp.26;
+        symbol [ Math %tmp.28 226 25 29 ];
+        %tmp.28 = getm $.Toybox.Math;
+        symbol [ round %tmp.29 226 30 35 ];
+        %tmp.29 = getv function %tmp.28 :round;
+        %tmp.30 = lgetv %radius;
+        symbol [ radius %tmp.30 226 36 42 ];
+        symbol [ Math %tmp.31 226 45 49 ];
+        %tmp.31 = getm $.Toybox.Math;
+        symbol [ sin %tmp.32 226 50 53 ];
+        %tmp.32 = getv function %tmp.31 :sin;
+        %tmp.33 = lgetv %rad.1;
+        symbol [ rad %tmp.33 226 54 57 ];
+        %tmp.34 = invoke %tmp.31 %tmp.32(%tmp.33);
+        %tmp.35 = mul %tmp.30 %tmp.34;
+        %tmp.36 = invoke %tmp.28 %tmp.29(%tmp.35);
+        %tmp.37 = add %tmp.27 %tmp.36;
+        %tmp.38 = dup %tmp.23;
+        %tmp.39 = aputv %tmp.38 1 %tmp.37;
+        ret %tmp.39;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_222_33_228_4_stop:
+    }
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 230; @symbol_functiondef = [_drawGrid,230,13,22]; @symbol_param<0> = [dc,230,23,25]; ]
+    function _drawGrid(dc) {
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_230_27_243_4_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 231 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 231 8 10 ];
+        symbol [ setColor %tmp.2 231 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ COLOR_MUTED %tmp.4 231 20 31 ];
+        %tmp.4 = getv ? :COLOR_MUTED;
+        symbol [ COLOR_BG %tmp.6 231 33 41 ];
+        %tmp.6 = getv ? :COLOR_BG;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 232 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_230_27_243_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_230_27_243_4_stop" ]
+        %spacing.1 = local;
+        symbol [ spacing %spacing.1 232 12 19 ];
+        %tmp.7 = 34;
+        lputv %spacing.1 %tmp.7;
+        symbol [ spacing %spacing.1 232 12 19 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 233 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_230_27_243_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_230_27_243_4_stop" ]
+        %w.2 = local;
+        symbol [ w %w.2 233 12 13 ];
+        %tmp.8 = lgetv %dc;
+        symbol [ dc %tmp.8 233 16 18 ];
+        symbol [ getWidth %tmp.9 233 19 27 ];
+        %tmp.9 = getv function %tmp.8 :getWidth;
+        %tmp.10 = invoke %tmp.8 %tmp.9();
+        lputv %w.2 %tmp.10;
+        symbol [ w %w.2 233 12 13 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 234 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_230_27_243_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_230_27_243_4_stop" ]
+        %h.3 = local;
+        symbol [ h %h.3 234 12 13 ];
+        %tmp.11 = lgetv %dc;
+        symbol [ dc %tmp.11 234 16 18 ];
+        symbol [ getHeight %tmp.12 234 19 28 ];
+        %tmp.12 = getv function %tmp.11 :getHeight;
+        %tmp.13 = invoke %tmp.11 %tmp.12();
+        lputv %h.3 %tmp.13;
+        symbol [ h %h.3 234 12 13 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 235 8 ]
+        for @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_235_8_237_8_for_test @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_235_8_237_8_for_incr @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_235_8_237_8_for_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_235_8_237_8_for_init:
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_235_8_237_8_for_begin" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_235_8_237_8_for_end" ]
+        %x.4 = local;
+        symbol [ x %x.4 235 17 18 ];
+        %tmp.14 = 0;
+        lputv %x.4 %tmp.14;
+        symbol [ x %x.4 235 17 18 ];
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_235_8_237_8_for_test:
+        %tmp.15 = lgetv %x.4;
+        symbol [ x %tmp.15 235 24 25 ];
+        %tmp.16 = lgetv %w.2;
+        symbol [ w %tmp.16 235 29 30 ];
+        %tmp.17 = lte %tmp.15 %tmp.16;
+        bf %tmp.17 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_235_8_237_8_for_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_235_8_237_8_for_begin:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_235_46_237_8_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 236 12 ]
+        %tmp.18 = lgetv %dc;
+        symbol [ dc %tmp.18 236 12 14 ];
+        symbol [ drawLine %tmp.19 236 15 23 ];
+        %tmp.19 = getv function %tmp.18 :drawLine;
+        %tmp.20 = lgetv %x.4;
+        symbol [ x %tmp.20 236 24 25 ];
+        %tmp.21 = 0;
+        %tmp.22 = lgetv %x.4;
+        symbol [ x %tmp.22 236 30 31 ];
+        %tmp.23 = lgetv %h.3;
+        symbol [ h %tmp.23 236 33 34 ];
+        invoke %tmp.18 %tmp.19(%tmp.20, %tmp.21, %tmp.22, %tmp.23);
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_235_46_237_8_stop:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_235_8_237_8_for_incr:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 235 ]
+        %tmp.24 = lgetv %x.4;
+        symbol [ x %tmp.24 235 32 33 ];
+        %tmp.25 = lgetv %spacing.1;
+        symbol [ spacing %tmp.25 235 37 44 ];
+        %tmp.26 = add %tmp.24 %tmp.25;
+        lputv %x.4 %tmp.26;
+        symbol [ x %x.4 235 32 33 ];
+        goto @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_235_8_237_8_for_test;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_235_8_237_8_for_end:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 238 8 ]
+        for @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_238_8_240_8_for_test @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_238_8_240_8_for_incr @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_238_8_240_8_for_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_238_8_240_8_for_init:
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_238_8_240_8_for_begin" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_238_8_240_8_for_end" ]
+        %y.5 = local;
+        symbol [ y %y.5 238 17 18 ];
+        %tmp.27 = 0;
+        lputv %y.5 %tmp.27;
+        symbol [ y %y.5 238 17 18 ];
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_238_8_240_8_for_test:
+        %tmp.28 = lgetv %y.5;
+        symbol [ y %tmp.28 238 24 25 ];
+        %tmp.29 = lgetv %h.3;
+        symbol [ h %tmp.29 238 29 30 ];
+        %tmp.30 = lte %tmp.28 %tmp.29;
+        bf %tmp.30 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_238_8_240_8_for_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_238_8_240_8_for_begin:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_238_46_240_8_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 239 12 ]
+        %tmp.31 = lgetv %dc;
+        symbol [ dc %tmp.31 239 12 14 ];
+        symbol [ drawLine %tmp.32 239 15 23 ];
+        %tmp.32 = getv function %tmp.31 :drawLine;
+        %tmp.33 = 0;
+        %tmp.34 = lgetv %y.5;
+        symbol [ y %tmp.34 239 27 28 ];
+        %tmp.35 = lgetv %w.2;
+        symbol [ w %tmp.35 239 30 31 ];
+        %tmp.36 = lgetv %y.5;
+        symbol [ y %tmp.36 239 33 34 ];
+        invoke %tmp.31 %tmp.32(%tmp.33, %tmp.34, %tmp.35, %tmp.36);
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_238_46_240_8_stop:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_238_8_240_8_for_incr:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 238 ]
+        %tmp.37 = lgetv %y.5;
+        symbol [ y %tmp.37 238 32 33 ];
+        %tmp.38 = lgetv %spacing.1;
+        symbol [ spacing %tmp.38 238 37 44 ];
+        %tmp.39 = add %tmp.37 %tmp.38;
+        lputv %y.5 %tmp.39;
+        symbol [ y %y.5 238 32 33 ];
+        goto @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_238_8_240_8_for_test;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_238_8_240_8_for_end:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 241 8 ]
+        %tmp.40 = lgetv %dc;
+        symbol [ dc %tmp.40 241 8 10 ];
+        symbol [ setColor %tmp.41 241 11 19 ];
+        %tmp.41 = getv function %tmp.40 :setColor;
+        symbol [ COLOR_MUTED %tmp.43 241 20 31 ];
+        %tmp.43 = getv ? :COLOR_MUTED;
+        symbol [ COLOR_BG %tmp.45 241 33 41 ];
+        %tmp.45 = getv ? :COLOR_BG;
+        invoke %tmp.40 %tmp.41(%tmp.43, %tmp.45);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 242 8 ]
+        %tmp.46 = lgetv %dc;
+        symbol [ dc %tmp.46 242 8 10 ];
+        symbol [ drawCircle %tmp.47 242 11 21 ];
+        %tmp.47 = getv function %tmp.46 :drawCircle;
+        symbol [ _center %tmp.49 242 22 29 ];
+        %tmp.49 = getv ? :_center;
+        %tmp.50 = 0;
+        %tmp.51 = agetv %tmp.49 %tmp.50;
+        symbol [ _center %tmp.53 242 34 41 ];
+        %tmp.53 = getv ? :_center;
+        %tmp.54 = 1;
+        %tmp.55 = agetv %tmp.53 %tmp.54;
+        %tmp.56 = 128;
+        invoke %tmp.46 %tmp.47(%tmp.51, %tmp.55, %tmp.56);
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_230_27_243_4_stop:
+    }
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 245; @symbol_functiondef = [_drawDecor,245,13,23]; @symbol_param<0> = [dc,245,24,26]; ]
+    function _drawDecor(dc) {
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_245_28_249_4_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 247 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 247 8 10 ];
+        symbol [ setColor %tmp.2 247 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ COLOR_MUTED %tmp.4 247 20 31 ];
+        %tmp.4 = getv ? :COLOR_MUTED;
+        symbol [ COLOR_BG %tmp.6 247 33 41 ];
+        %tmp.6 = getv ? :COLOR_BG;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 248 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 248 8 10 ];
+        symbol [ drawCircle %tmp.8 248 11 21 ];
+        %tmp.8 = getv function %tmp.7 :drawCircle;
+        symbol [ _center %tmp.10 248 22 29 ];
+        %tmp.10 = getv ? :_center;
+        %tmp.11 = 0;
+        %tmp.12 = agetv %tmp.10 %tmp.11;
+        symbol [ _center %tmp.14 248 34 41 ];
+        %tmp.14 = getv ? :_center;
+        %tmp.15 = 1;
+        %tmp.16 = agetv %tmp.14 %tmp.15;
+        %tmp.17 = 70;
+        invoke %tmp.7 %tmp.8(%tmp.12, %tmp.16, %tmp.17);
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_245_28_249_4_stop:
+    }
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 251; @symbol_functiondef = [_drawArcSegment,251,13,28]; @symbol_param<0> = [dc,251,29,31]; @symbol_param<1> = [radius,251,33,39]; @symbol_param<2> = [startDeg,251,41,49]; @symbol_param<3> = [sweepDeg,251,51,59]; @symbol_param<4> = [progress,251,61,69]; @symbol_param<5> = [colorActive,251,71,82]; @symbol_param<6> = [colorDim,251,84,92]; ]
+    function _drawArcSegment(dc, radius, startDeg, sweepDeg, progress, colorActive, colorDim) {
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_251_94_260_4_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 252 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_251_94_260_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_251_94_260_4_stop" ]
+        %size.1 = local;
+        symbol [ size %size.1 252 12 16 ];
+        %tmp.1 = lgetv %radius;
+        symbol [ radius %tmp.1 252 19 25 ];
+        %tmp.2 = 2;
+        %tmp.3 = mul %tmp.1 %tmp.2;
+        lputv %size.1 %tmp.3;
+        symbol [ size %size.1 252 12 16 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 253 8 ]
+        %tmp.4 = lgetv %dc;
+        symbol [ dc %tmp.4 253 8 10 ];
+        symbol [ setColor %tmp.5 253 11 19 ];
+        %tmp.5 = getv function %tmp.4 :setColor;
+        %tmp.6 = lgetv %colorDim;
+        symbol [ colorDim %tmp.6 253 20 28 ];
+        symbol [ COLOR_BG %tmp.8 253 30 38 ];
+        %tmp.8 = getv ? :COLOR_BG;
+        invoke %tmp.4 %tmp.5(%tmp.6, %tmp.8);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 254 8 ]
+        %tmp.9 = lgetv %dc;
+        symbol [ dc %tmp.9 254 8 10 ];
+        symbol [ drawArc %tmp.10 254 11 18 ];
+        %tmp.10 = getv function %tmp.9 :drawArc;
+        symbol [ _center %tmp.12 254 19 26 ];
+        %tmp.12 = getv ? :_center;
+        %tmp.13 = 0;
+        %tmp.14 = agetv %tmp.12 %tmp.13;
+        %tmp.15 = lgetv %radius;
+        symbol [ radius %tmp.15 254 32 38 ];
+        %tmp.16 = sub %tmp.14 %tmp.15;
+        symbol [ _center %tmp.18 254 40 47 ];
+        %tmp.18 = getv ? :_center;
+        %tmp.19 = 1;
+        %tmp.20 = agetv %tmp.18 %tmp.19;
+        %tmp.21 = lgetv %radius;
+        symbol [ radius %tmp.21 254 53 59 ];
+        %tmp.22 = sub %tmp.20 %tmp.21;
+        %tmp.23 = lgetv %size.1;
+        symbol [ size %tmp.23 254 61 65 ];
+        %tmp.24 = lgetv %size.1;
+        symbol [ size %tmp.24 254 67 71 ];
+        %tmp.25 = lgetv %startDeg;
+        symbol [ startDeg %tmp.25 254 73 81 ];
+        %tmp.26 = lgetv %sweepDeg;
+        symbol [ sweepDeg %tmp.26 254 83 91 ];
+        invoke %tmp.9 %tmp.10(%tmp.16, %tmp.22, %tmp.23, %tmp.24, %tmp.25, %tmp.26);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 255 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_251_94_260_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_251_94_260_4_stop" ]
+        %activeSweep.2 = local;
+        symbol [ activeSweep %activeSweep.2 255 12 23 ];
+        %tmp.27 = lgetv %sweepDeg;
+        symbol [ sweepDeg %tmp.27 255 26 34 ];
+        %tmp.28 = lgetv %progress;
+        symbol [ progress %tmp.28 255 37 45 ];
+        %tmp.29 = mul %tmp.27 %tmp.28;
+        lputv %activeSweep.2 %tmp.29;
+        symbol [ activeSweep %activeSweep.2 255 12 23 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 256 8 ]
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_256_8_259_8_if_stmt:
+        %tmp.30 = lgetv %activeSweep.2;
+        symbol [ activeSweep %tmp.30 256 12 23 ];
+        %tmp.31 = 0;
+        %tmp.32 = gt %tmp.30 %tmp.31;
+        bf %tmp.32 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_256_8_259_8_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_256_8_259_8_if_true:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_256_29_259_8_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 257 12 ]
+        %tmp.33 = lgetv %dc;
+        symbol [ dc %tmp.33 257 12 14 ];
+        symbol [ setColor %tmp.34 257 15 23 ];
+        %tmp.34 = getv function %tmp.33 :setColor;
+        %tmp.35 = lgetv %colorActive;
+        symbol [ colorActive %tmp.35 257 24 35 ];
+        symbol [ COLOR_BG %tmp.37 257 37 45 ];
+        %tmp.37 = getv ? :COLOR_BG;
+        invoke %tmp.33 %tmp.34(%tmp.35, %tmp.37);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 258 12 ]
+        %tmp.38 = lgetv %dc;
+        symbol [ dc %tmp.38 258 12 14 ];
+        symbol [ drawArc %tmp.39 258 15 22 ];
+        %tmp.39 = getv function %tmp.38 :drawArc;
+        symbol [ _center %tmp.41 258 23 30 ];
+        %tmp.41 = getv ? :_center;
+        %tmp.42 = 0;
+        %tmp.43 = agetv %tmp.41 %tmp.42;
+        %tmp.44 = lgetv %radius;
+        symbol [ radius %tmp.44 258 36 42 ];
+        %tmp.45 = sub %tmp.43 %tmp.44;
+        symbol [ _center %tmp.47 258 44 51 ];
+        %tmp.47 = getv ? :_center;
+        %tmp.48 = 1;
+        %tmp.49 = agetv %tmp.47 %tmp.48;
+        %tmp.50 = lgetv %radius;
+        symbol [ radius %tmp.50 258 57 63 ];
+        %tmp.51 = sub %tmp.49 %tmp.50;
+        %tmp.52 = lgetv %size.1;
+        symbol [ size %tmp.52 258 65 69 ];
+        %tmp.53 = lgetv %size.1;
+        symbol [ size %tmp.53 258 71 75 ];
+        %tmp.54 = lgetv %startDeg;
+        symbol [ startDeg %tmp.54 258 77 85 ];
+        %tmp.55 = lgetv %activeSweep.2;
+        symbol [ activeSweep %tmp.55 258 87 98 ];
+        invoke %tmp.38 %tmp.39(%tmp.45, %tmp.51, %tmp.52, %tmp.53, %tmp.54, %tmp.55);
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_256_29_259_8_stop:
+        goto @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_256_8_259_8_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_256_8_259_8_if_end:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_251_94_260_4_stop:
+    }
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 262; @symbol_functiondef = [_drawDayArc,262,13,24]; @symbol_param<0> = [dc,262,25,27]; ]
+    function _drawDayArc(dc) {
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_262_29_267_4_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 263 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_262_29_267_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_262_29_267_4_stop" ]
+        %info.1 = local;
+        symbol [ info %info.1 263 12 16 ];
+        symbol [ Time %tmp.1 263 19 23 ];
+        %tmp.1 = getm $.Toybox.Time;
+        symbol [ Gregorian %tmp.2 263 24 33 ];
+        %tmp.2 = getv %tmp.1 :Gregorian;
+        symbol [ info %tmp.3 263 34 38 ];
+        %tmp.3 = getv function %tmp.2 :info;
+        symbol [ Time %tmp.4 263 39 43 ];
+        %tmp.4 = getm $.Toybox.Time;
+        symbol [ now %tmp.5 263 44 47 ];
+        %tmp.5 = getv function %tmp.4 :now;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        symbol [ Time %tmp.7 263 51 55 ];
+        %tmp.7 = getm $.Toybox.Time;
+        symbol [ FORMAT_SHORT %tmp.8 263 56 68 ];
+        %tmp.8 = getv %tmp.7 :FORMAT_SHORT;
+        %tmp.9 = invoke %tmp.2 %tmp.3(%tmp.6, %tmp.8);
+        lputv %info.1 %tmp.9;
+        symbol [ info %info.1 263 12 16 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 264 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_262_29_267_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_262_29_267_4_stop" ]
+        %minutes.2 = local;
+        symbol [ minutes %minutes.2 264 12 19 ];
+        %tmp.10 = lgetv %info.1;
+        symbol [ info %tmp.10 264 22 26 ];
+        symbol [ hour %tmp.11 264 27 31 ];
+        %tmp.11 = getv %tmp.10 :hour;
+        %tmp.12 = 60;
+        %tmp.13 = mul %tmp.11 %tmp.12;
+        %tmp.14 = lgetv %info.1;
+        symbol [ info %tmp.14 264 39 43 ];
+        symbol [ min %tmp.15 264 44 47 ];
+        %tmp.15 = getv %tmp.14 :min;
+        %tmp.16 = add %tmp.13 %tmp.15;
+        lputv %minutes.2 %tmp.16;
+        symbol [ minutes %minutes.2 264 12 19 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 265 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_262_29_267_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_262_29_267_4_stop" ]
+        %progress.3 = local;
+        symbol [ progress %progress.3 265 12 20 ];
+        %tmp.17 = lgetv %minutes.2;
+        symbol [ minutes %tmp.17 265 23 30 ];
+        %tmp.18 = 1440.0;
+        %tmp.19 = div %tmp.17 %tmp.18;
+        lputv %progress.3 %tmp.19;
+        symbol [ progress %progress.3 265 12 20 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 266 8 ]
+        %tmp.20 = self;
+        symbol [ _drawArcSegment %tmp.21 266 8 23 ];
+        %tmp.21 = getv function %tmp.20 :_drawArcSegment;
+        %tmp.22 = lgetv %dc;
+        symbol [ dc %tmp.22 266 24 26 ];
+        %tmp.23 = 115;
+        %tmp.24 = -150;
+        %tmp.25 = 120;
+        %tmp.26 = lgetv %progress.3;
+        symbol [ progress %tmp.26 266 44 52 ];
+        symbol [ COLOR_CYAN %tmp.28 266 54 64 ];
+        %tmp.28 = getv ? :COLOR_CYAN;
+        symbol [ COLOR_MUTED %tmp.30 266 66 77 ];
+        %tmp.30 = getv ? :COLOR_MUTED;
+        invoke %tmp.20 %tmp.21(%tmp.22, %tmp.23, %tmp.24, %tmp.25, %tmp.26, %tmp.28, %tmp.30);
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_262_29_267_4_stop:
+    }
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 269; @symbol_functiondef = [_drawStepArc,269,13,25]; @symbol_param<0> = [dc,269,26,28]; @symbol_param<1> = [amInfo,269,30,36]; ]
+    function _drawStepArc(dc, amInfo) {
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_269_38_276_4_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 270 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_269_38_276_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_269_38_276_4_stop" ]
+        %steps.1 = local;
+        symbol [ steps %steps.1 270 12 17 ];
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_270_20_270_78_begin:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_270_21_270_55_begin:
+        %tmp.1 = lgetv %amInfo;
+        symbol [ amInfo %tmp.1 270 21 27 ];
+        %tmp.2 = null;
+        %tmp.3 = ne %tmp.1 %tmp.2;
+        bf %tmp.3 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_270_20_270_78_else_false;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_270_39_270_55_true:
+        %tmp.4 = lgetv %amInfo;
+        symbol [ amInfo %tmp.4 270 39 45 ];
+        %tmp.5 = as %tmp.4 { (!Null) };
+        symbol [ steps %tmp.6 270 46 51 ];
+        %tmp.6 = getv %tmp.5 :steps;
+        %tmp.7 = null;
+        %tmp.8 = ne %tmp.6 %tmp.7;
+        push %tmp.8;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_270_39_270_55_end:
+        %tmp.9 = phi [%tmp.3 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_270_21_270_55_begin] [%tmp.8 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_270_39_270_55_true] [%tmp.9 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_270_39_270_55_end];
+        bf %tmp.9 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_270_20_270_78_else_false;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_270_20_270_78_true:
+        %tmp.10 = lgetv %amInfo;
+        symbol [ amInfo %tmp.10 270 63 69 ];
+        %tmp.11 = as %tmp.10 { (!Null) };
+        symbol [ steps %tmp.12 270 70 75 ];
+        %tmp.12 = getv %tmp.11 :steps;
+        push %tmp.12;
+        goto @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_270_20_270_78_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_270_20_270_78_else_false:
+        %tmp.13 = 0;
+        push %tmp.13;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_270_20_270_78_end:
+        %tmp.14 = phi [%tmp.9 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_270_20_270_78_begin] [%tmp.12 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_270_20_270_78_true] [%tmp.13 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_270_20_270_78_else_false] [%tmp.14 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_270_20_270_78_end];
+        lputv %steps.1 %tmp.14;
+        symbol [ steps %steps.1 270 12 17 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 271 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_269_38_276_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_269_38_276_4_stop" ]
+        %progress.2 = local;
+        symbol [ progress %progress.2 271 12 20 ];
+        %tmp.15 = lgetv %steps.1;
+        symbol [ steps %tmp.15 271 23 28 ];
+        symbol [ STEP_GOAL %tmp.17 271 31 40 ];
+        %tmp.17 = getv ? :STEP_GOAL;
+        %tmp.18 = div %tmp.15 %tmp.17;
+        lputv %progress.2 %tmp.18;
+        symbol [ progress %progress.2 271 12 20 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 272 8 ]
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_272_8_274_8_if_stmt:
+        %tmp.19 = lgetv %progress.2;
+        symbol [ progress %tmp.19 272 12 20 ];
+        %tmp.20 = 1;
+        %tmp.21 = gt %tmp.19 %tmp.20;
+        bf %tmp.21 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_272_8_274_8_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_272_8_274_8_if_true:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_272_26_274_8_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 273 12 ]
+        %tmp.22 = 1;
+        lputv %progress.2 %tmp.22;
+        symbol [ progress %progress.2 273 12 20 ];
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_272_26_274_8_stop:
+        goto @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_272_8_274_8_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_272_8_274_8_if_end:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 275 8 ]
+        %tmp.23 = self;
+        symbol [ _drawArcSegment %tmp.24 275 8 23 ];
+        %tmp.24 = getv function %tmp.23 :_drawArcSegment;
+        %tmp.25 = lgetv %dc;
+        symbol [ dc %tmp.25 275 24 26 ];
+        %tmp.26 = 123;
+        %tmp.27 = 200;
+        %tmp.28 = 140;
+        %tmp.29 = lgetv %progress.2;
+        symbol [ progress %tmp.29 275 43 51 ];
+        symbol [ COLOR_CYAN %tmp.31 275 53 63 ];
+        %tmp.31 = getv ? :COLOR_CYAN;
+        symbol [ COLOR_MUTED %tmp.33 275 65 76 ];
+        %tmp.33 = getv ? :COLOR_MUTED;
+        invoke %tmp.23 %tmp.24(%tmp.25, %tmp.26, %tmp.27, %tmp.28, %tmp.29, %tmp.31, %tmp.33);
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_269_38_276_4_stop:
+    }
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 279; @symbol_functiondef = [_drawTopBar,279,13,24]; @symbol_param<0> = [dc,279,25,27]; ]
+    function _drawTopBar(dc) {
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_279_29_311_4_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 280 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_279_29_311_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_279_29_311_4_stop" ]
+        %w.1 = local;
+        symbol [ w %w.1 280 12 13 ];
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 280 16 18 ];
+        symbol [ getWidth %tmp.2 280 19 27 ];
+        %tmp.2 = getv function %tmp.1 :getWidth;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %w.1 %tmp.3;
+        symbol [ w %w.1 280 12 13 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 281 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_279_29_311_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_279_29_311_4_stop" ]
+        %barY.2 = local;
+        symbol [ barY %barY.2 281 12 16 ];
+        %tmp.4 = 28;
+        lputv %barY.2 %tmp.4;
+        symbol [ barY %barY.2 281 12 16 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 282 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_279_29_311_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_279_29_311_4_stop" ]
+        %barH.3 = local;
+        symbol [ barH %barH.3 282 12 16 ];
+        %tmp.5 = 6;
+        lputv %barH.3 %tmp.5;
+        symbol [ barH %barH.3 282 12 16 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 283 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_279_29_311_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_279_29_311_4_stop" ]
+        %pad.4 = local;
+        symbol [ pad %pad.4 283 12 15 ];
+        %tmp.6 = 24;
+        lputv %pad.4 %tmp.6;
+        symbol [ pad %pad.4 283 12 15 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 284 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_279_29_311_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_279_29_311_4_stop" ]
+        %barW.5 = local;
+        symbol [ barW %barW.5 284 12 16 ];
+        %tmp.7 = lgetv %w.1;
+        symbol [ w %tmp.7 284 19 20 ];
+        %tmp.8 = lgetv %pad.4;
+        symbol [ pad %tmp.8 284 23 26 ];
+        %tmp.9 = 2;
+        %tmp.10 = mul %tmp.8 %tmp.9;
+        %tmp.11 = sub %tmp.7 %tmp.10;
+        lputv %barW.5 %tmp.11;
+        symbol [ barW %barW.5 284 12 16 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 287 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_279_29_311_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_279_29_311_4_stop" ]
+        %battPct.6 = local;
+        symbol [ battPct %battPct.6 287 12 19 ];
+        %tmp.12 = self;
+        symbol [ _getBatteryPct %tmp.13 287 22 36 ];
+        %tmp.13 = getv function %tmp.12 :_getBatteryPct;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        lputv %battPct.6 %tmp.14;
+        symbol [ battPct %battPct.6 287 12 19 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 288 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_279_29_311_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_279_29_311_4_stop" ]
+        %segW.7 = local;
+        symbol [ segW %segW.7 288 12 16 ];
+        %tmp.15 = lgetv %barW.5;
+        symbol [ barW %tmp.15 288 19 23 ];
+        %tmp.16 = 3;
+        %tmp.17 = div %tmp.15 %tmp.16;
+        lputv %segW.7 %tmp.17;
+        symbol [ segW %segW.7 288 12 16 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 289 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_279_29_311_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_279_29_311_4_stop" ]
+        %bx.8 = local;
+        symbol [ bx %bx.8 289 12 14 ];
+        %tmp.18 = lgetv %pad.4;
+        symbol [ pad %tmp.18 289 17 20 ];
+        lputv %bx.8 %tmp.18;
+        symbol [ bx %bx.8 289 12 14 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 290 8 ]
+        %tmp.19 = lgetv %dc;
+        symbol [ dc %tmp.19 290 8 10 ];
+        symbol [ setColor %tmp.20 290 11 19 ];
+        %tmp.20 = getv function %tmp.19 :setColor;
+        symbol [ COLOR_MUTED %tmp.22 290 20 31 ];
+        %tmp.22 = getv ? :COLOR_MUTED;
+        symbol [ COLOR_BG %tmp.24 290 33 41 ];
+        %tmp.24 = getv ? :COLOR_BG;
+        invoke %tmp.19 %tmp.20(%tmp.22, %tmp.24);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 291 8 ]
+        %tmp.25 = lgetv %dc;
+        symbol [ dc %tmp.25 291 8 10 ];
+        symbol [ drawRectangle %tmp.26 291 11 24 ];
+        %tmp.26 = getv function %tmp.25 :drawRectangle;
+        %tmp.27 = lgetv %bx.8;
+        symbol [ bx %tmp.27 291 25 27 ];
+        %tmp.28 = lgetv %barY.2;
+        symbol [ barY %tmp.28 291 29 33 ];
+        %tmp.29 = lgetv %segW.7;
+        symbol [ segW %tmp.29 291 35 39 ];
+        %tmp.30 = lgetv %barH.3;
+        symbol [ barH %tmp.30 291 41 45 ];
+        invoke %tmp.25 %tmp.26(%tmp.27, %tmp.28, %tmp.29, %tmp.30);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 292 8 ]
+        %tmp.31 = lgetv %dc;
+        symbol [ dc %tmp.31 292 8 10 ];
+        symbol [ setColor %tmp.32 292 11 19 ];
+        %tmp.32 = getv function %tmp.31 :setColor;
+        symbol [ COLOR_CYAN %tmp.34 292 20 30 ];
+        %tmp.34 = getv ? :COLOR_CYAN;
+        symbol [ COLOR_BG %tmp.36 292 32 40 ];
+        %tmp.36 = getv ? :COLOR_BG;
+        invoke %tmp.31 %tmp.32(%tmp.34, %tmp.36);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 293 8 ]
+        %tmp.37 = lgetv %dc;
+        symbol [ dc %tmp.37 293 8 10 ];
+        symbol [ fillRectangle %tmp.38 293 11 24 ];
+        %tmp.38 = getv function %tmp.37 :fillRectangle;
+        %tmp.39 = lgetv %bx.8;
+        symbol [ bx %tmp.39 293 25 27 ];
+        %tmp.40 = lgetv %barY.2;
+        symbol [ barY %tmp.40 293 29 33 ];
+        %tmp.41 = lgetv %segW.7;
+        symbol [ segW %tmp.41 293 36 40 ];
+        %tmp.42 = lgetv %battPct.6;
+        symbol [ battPct %tmp.42 293 43 50 ];
+        %tmp.43 = mul %tmp.41 %tmp.42;
+        %tmp.44 = 100;
+        %tmp.45 = div %tmp.43 %tmp.44;
+        %tmp.46 = lgetv %barH.3;
+        symbol [ barH %tmp.46 293 59 63 ];
+        invoke %tmp.37 %tmp.38(%tmp.39, %tmp.40, %tmp.45, %tmp.46);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 294 8 ]
+        %tmp.47 = lgetv %dc;
+        symbol [ dc %tmp.47 294 8 10 ];
+        symbol [ drawText %tmp.48 294 11 19 ];
+        %tmp.48 = getv function %tmp.47 :drawText;
+        %tmp.49 = lgetv %bx.8;
+        symbol [ bx %tmp.49 294 20 22 ];
+        %tmp.50 = lgetv %segW.7;
+        symbol [ segW %tmp.50 294 25 29 ];
+        %tmp.51 = 2;
+        %tmp.52 = div %tmp.50 %tmp.51;
+        %tmp.53 = add %tmp.49 %tmp.52;
+        %tmp.54 = lgetv %barY.2;
+        symbol [ barY %tmp.54 294 35 39 ];
+        %tmp.55 = 10;
+        %tmp.56 = sub %tmp.54 %tmp.55;
+        symbol [ _fontLabel %tmp.58 294 46 56 ];
+        %tmp.58 = getv ? :_fontLabel;
+        symbol [ Lang %tmp.59 294 58 62 ];
+        %tmp.59 = getm $.Toybox.Lang;
+        symbol [ format %tmp.60 294 63 69 ];
+        %tmp.60 = getv function %tmp.59 :format;
+        %tmp.61 = "%d%%";
+        %tmp.62 = newa 1;
+        %tmp.63 = lgetv %battPct.6;
+        symbol [ battPct %tmp.63 294 79 86 ];
+        %tmp.64 = dup %tmp.62;
+        %tmp.65 = aputv %tmp.64 0 %tmp.63;
+        %tmp.66 = invoke %tmp.59 %tmp.60(%tmp.61, %tmp.65);
+        symbol [ G %tmp.67 294 90 91 ];
+        %tmp.67 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.68 294 92 111 ];
+        %tmp.68 = getv %tmp.67 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.47 %tmp.48(%tmp.53, %tmp.56, %tmp.58, %tmp.66, %tmp.68);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 297 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_279_29_311_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_279_29_311_4_stop" ]
+        %humPct.9 = local;
+        symbol [ humPct %humPct.9 297 12 18 ];
+        %tmp.69 = self;
+        symbol [ _getHumidityPct %tmp.70 297 21 36 ];
+        %tmp.70 = getv function %tmp.69 :_getHumidityPct;
+        %tmp.71 = invoke %tmp.69 %tmp.70();
+        lputv %humPct.9 %tmp.71;
+        symbol [ humPct %humPct.9 297 12 18 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 298 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_279_29_311_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_279_29_311_4_stop" ]
+        %hx.10 = local;
+        symbol [ hx %hx.10 298 12 14 ];
+        %tmp.72 = lgetv %pad.4;
+        symbol [ pad %tmp.72 298 17 20 ];
+        %tmp.73 = lgetv %segW.7;
+        symbol [ segW %tmp.73 298 23 27 ];
+        %tmp.74 = add %tmp.72 %tmp.73;
+        %tmp.75 = 6;
+        %tmp.76 = add %tmp.74 %tmp.75;
+        lputv %hx.10 %tmp.76;
+        symbol [ hx %hx.10 298 12 14 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 299 8 ]
+        %tmp.77 = lgetv %dc;
+        symbol [ dc %tmp.77 299 8 10 ];
+        symbol [ setColor %tmp.78 299 11 19 ];
+        %tmp.78 = getv function %tmp.77 :setColor;
+        symbol [ COLOR_MUTED %tmp.80 299 20 31 ];
+        %tmp.80 = getv ? :COLOR_MUTED;
+        symbol [ COLOR_BG %tmp.82 299 33 41 ];
+        %tmp.82 = getv ? :COLOR_BG;
+        invoke %tmp.77 %tmp.78(%tmp.80, %tmp.82);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 300 8 ]
+        %tmp.83 = lgetv %dc;
+        symbol [ dc %tmp.83 300 8 10 ];
+        symbol [ drawRectangle %tmp.84 300 11 24 ];
+        %tmp.84 = getv function %tmp.83 :drawRectangle;
+        %tmp.85 = lgetv %hx.10;
+        symbol [ hx %tmp.85 300 25 27 ];
+        %tmp.86 = lgetv %barY.2;
+        symbol [ barY %tmp.86 300 29 33 ];
+        %tmp.87 = lgetv %segW.7;
+        symbol [ segW %tmp.87 300 35 39 ];
+        %tmp.88 = lgetv %barH.3;
+        symbol [ barH %tmp.88 300 41 45 ];
+        invoke %tmp.83 %tmp.84(%tmp.85, %tmp.86, %tmp.87, %tmp.88);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 301 8 ]
+        %tmp.89 = lgetv %dc;
+        symbol [ dc %tmp.89 301 8 10 ];
+        symbol [ setColor %tmp.90 301 11 19 ];
+        %tmp.90 = getv function %tmp.89 :setColor;
+        symbol [ COLOR_CYAN %tmp.92 301 20 30 ];
+        %tmp.92 = getv ? :COLOR_CYAN;
+        symbol [ COLOR_BG %tmp.94 301 32 40 ];
+        %tmp.94 = getv ? :COLOR_BG;
+        invoke %tmp.89 %tmp.90(%tmp.92, %tmp.94);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 302 8 ]
+        %tmp.95 = lgetv %dc;
+        symbol [ dc %tmp.95 302 8 10 ];
+        symbol [ fillRectangle %tmp.96 302 11 24 ];
+        %tmp.96 = getv function %tmp.95 :fillRectangle;
+        %tmp.97 = lgetv %hx.10;
+        symbol [ hx %tmp.97 302 25 27 ];
+        %tmp.98 = lgetv %barY.2;
+        symbol [ barY %tmp.98 302 29 33 ];
+        %tmp.99 = lgetv %segW.7;
+        symbol [ segW %tmp.99 302 36 40 ];
+        %tmp.100 = lgetv %humPct.9;
+        symbol [ humPct %tmp.100 302 43 49 ];
+        %tmp.101 = mul %tmp.99 %tmp.100;
+        %tmp.102 = 100;
+        %tmp.103 = div %tmp.101 %tmp.102;
+        %tmp.104 = lgetv %barH.3;
+        symbol [ barH %tmp.104 302 58 62 ];
+        invoke %tmp.95 %tmp.96(%tmp.97, %tmp.98, %tmp.103, %tmp.104);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 303 8 ]
+        %tmp.105 = lgetv %dc;
+        symbol [ dc %tmp.105 303 8 10 ];
+        symbol [ drawText %tmp.106 303 11 19 ];
+        %tmp.106 = getv function %tmp.105 :drawText;
+        %tmp.107 = lgetv %hx.10;
+        symbol [ hx %tmp.107 303 20 22 ];
+        %tmp.108 = lgetv %segW.7;
+        symbol [ segW %tmp.108 303 25 29 ];
+        %tmp.109 = 2;
+        %tmp.110 = div %tmp.108 %tmp.109;
+        %tmp.111 = add %tmp.107 %tmp.110;
+        %tmp.112 = lgetv %barY.2;
+        symbol [ barY %tmp.112 303 35 39 ];
+        %tmp.113 = 10;
+        %tmp.114 = sub %tmp.112 %tmp.113;
+        symbol [ _fontLabel %tmp.116 303 46 56 ];
+        %tmp.116 = getv ? :_fontLabel;
+        symbol [ Lang %tmp.117 303 58 62 ];
+        %tmp.117 = getm $.Toybox.Lang;
+        symbol [ format %tmp.118 303 63 69 ];
+        %tmp.118 = getv function %tmp.117 :format;
+        %tmp.119 = "%d%%";
+        %tmp.120 = newa 1;
+        %tmp.121 = lgetv %humPct.9;
+        symbol [ humPct %tmp.121 303 79 85 ];
+        %tmp.122 = dup %tmp.120;
+        %tmp.123 = aputv %tmp.122 0 %tmp.121;
+        %tmp.124 = invoke %tmp.117 %tmp.118(%tmp.119, %tmp.123);
+        symbol [ G %tmp.125 303 89 90 ];
+        %tmp.125 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.126 303 91 110 ];
+        %tmp.126 = getv %tmp.125 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.105 %tmp.106(%tmp.111, %tmp.114, %tmp.116, %tmp.124, %tmp.126);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 306 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_279_29_311_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_279_29_311_4_stop" ]
+        %tx.11 = local;
+        symbol [ tx %tx.11 306 12 14 ];
+        %tmp.127 = lgetv %pad.4;
+        symbol [ pad %tmp.127 306 17 20 ];
+        %tmp.128 = lgetv %segW.7;
+        symbol [ segW %tmp.128 306 24 28 ];
+        %tmp.129 = 2;
+        %tmp.130 = mul %tmp.128 %tmp.129;
+        %tmp.131 = add %tmp.127 %tmp.130;
+        %tmp.132 = 12;
+        %tmp.133 = add %tmp.131 %tmp.132;
+        lputv %tx.11 %tmp.133;
+        symbol [ tx %tx.11 306 12 14 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 307 8 ]
+        %tmp.134 = lgetv %dc;
+        symbol [ dc %tmp.134 307 8 10 ];
+        symbol [ setColor %tmp.135 307 11 19 ];
+        %tmp.135 = getv function %tmp.134 :setColor;
+        symbol [ COLOR_SLATE %tmp.137 307 20 31 ];
+        %tmp.137 = getv ? :COLOR_SLATE;
+        symbol [ COLOR_BG %tmp.139 307 33 41 ];
+        %tmp.139 = getv ? :COLOR_BG;
+        invoke %tmp.134 %tmp.135(%tmp.137, %tmp.139);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 308 8 ]
+        %tmp.140 = lgetv %dc;
+        symbol [ dc %tmp.140 308 8 10 ];
+        symbol [ drawRectangle %tmp.141 308 11 24 ];
+        %tmp.141 = getv function %tmp.140 :drawRectangle;
+        %tmp.142 = lgetv %tx.11;
+        symbol [ tx %tmp.142 308 25 27 ];
+        %tmp.143 = lgetv %barY.2;
+        symbol [ barY %tmp.143 308 29 33 ];
+        %tmp.144 = lgetv %segW.7;
+        symbol [ segW %tmp.144 308 35 39 ];
+        %tmp.145 = 6;
+        %tmp.146 = sub %tmp.144 %tmp.145;
+        %tmp.147 = lgetv %barH.3;
+        symbol [ barH %tmp.147 308 45 49 ];
+        invoke %tmp.140 %tmp.141(%tmp.142, %tmp.143, %tmp.146, %tmp.147);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 309 8 ]
+        %tmp.148 = lgetv %dc;
+        symbol [ dc %tmp.148 309 8 10 ];
+        symbol [ setColor %tmp.149 309 11 19 ];
+        %tmp.149 = getv function %tmp.148 :setColor;
+        symbol [ COLOR_RED %tmp.151 309 20 29 ];
+        %tmp.151 = getv ? :COLOR_RED;
+        symbol [ COLOR_BG %tmp.153 309 31 39 ];
+        %tmp.153 = getv ? :COLOR_BG;
+        invoke %tmp.148 %tmp.149(%tmp.151, %tmp.153);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 310 8 ]
+        %tmp.154 = lgetv %dc;
+        symbol [ dc %tmp.154 310 8 10 ];
+        symbol [ drawText %tmp.155 310 11 19 ];
+        %tmp.155 = getv function %tmp.154 :drawText;
+        %tmp.156 = lgetv %tx.11;
+        symbol [ tx %tmp.156 310 20 22 ];
+        %tmp.157 = lgetv %segW.7;
+        symbol [ segW %tmp.157 310 26 30 ];
+        %tmp.158 = 6;
+        %tmp.159 = sub %tmp.157 %tmp.158;
+        %tmp.160 = 2;
+        %tmp.161 = div %tmp.159 %tmp.160;
+        %tmp.162 = add %tmp.156 %tmp.161;
+        %tmp.163 = lgetv %barY.2;
+        symbol [ barY %tmp.163 310 41 45 ];
+        %tmp.164 = 10;
+        %tmp.165 = sub %tmp.163 %tmp.164;
+        symbol [ _fontLabel %tmp.167 310 52 62 ];
+        %tmp.167 = getv ? :_fontLabel;
+        %tmp.168 = self;
+        symbol [ _getWeather %tmp.169 310 64 75 ];
+        %tmp.169 = getv function %tmp.168 :_getWeather;
+        %tmp.170 = invoke %tmp.168 %tmp.169();
+        symbol [ G %tmp.171 310 79 80 ];
+        %tmp.171 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.172 310 81 100 ];
+        %tmp.172 = getv %tmp.171 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.154 %tmp.155(%tmp.162, %tmp.165, %tmp.167, %tmp.170, %tmp.172);
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_279_29_311_4_stop:
+    }
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 314; @symbol_functiondef = [_drawBottomBar,314,13,27]; @symbol_param<0> = [dc,314,28,30]; @symbol_param<1> = [amInfo,314,32,38]; ]
+    function _drawBottomBar(dc, amInfo) {
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_314_40_330_4_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 315 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_314_40_330_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_314_40_330_4_stop" ]
+        %w.1 = local;
+        symbol [ w %w.1 315 12 13 ];
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 315 16 18 ];
+        symbol [ getWidth %tmp.2 315 19 27 ];
+        %tmp.2 = getv function %tmp.1 :getWidth;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %w.1 %tmp.3;
+        symbol [ w %w.1 315 12 13 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 316 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_314_40_330_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_314_40_330_4_stop" ]
+        %barY.2 = local;
+        symbol [ barY %barY.2 316 12 16 ];
+        %tmp.4 = lgetv %dc;
+        symbol [ dc %tmp.4 316 19 21 ];
+        symbol [ getHeight %tmp.5 316 22 31 ];
+        %tmp.5 = getv function %tmp.4 :getHeight;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        %tmp.7 = 30;
+        %tmp.8 = sub %tmp.6 %tmp.7;
+        lputv %barY.2 %tmp.8;
+        symbol [ barY %barY.2 316 12 16 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 317 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_314_40_330_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_314_40_330_4_stop" ]
+        %barH.3 = local;
+        symbol [ barH %barH.3 317 12 16 ];
+        %tmp.9 = 8;
+        lputv %barH.3 %tmp.9;
+        symbol [ barH %barH.3 317 12 16 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 318 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_314_40_330_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_314_40_330_4_stop" ]
+        %pad.4 = local;
+        symbol [ pad %pad.4 318 12 15 ];
+        %tmp.10 = 24;
+        lputv %pad.4 %tmp.10;
+        symbol [ pad %pad.4 318 12 15 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 319 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_314_40_330_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_314_40_330_4_stop" ]
+        %barW.5 = local;
+        symbol [ barW %barW.5 319 12 16 ];
+        %tmp.11 = lgetv %w.1;
+        symbol [ w %tmp.11 319 19 20 ];
+        %tmp.12 = lgetv %pad.4;
+        symbol [ pad %tmp.12 319 23 26 ];
+        %tmp.13 = 2;
+        %tmp.14 = mul %tmp.12 %tmp.13;
+        %tmp.15 = sub %tmp.11 %tmp.14;
+        lputv %barW.5 %tmp.15;
+        symbol [ barW %barW.5 319 12 16 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 320 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_314_40_330_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_314_40_330_4_stop" ]
+        %steps.6 = local;
+        symbol [ steps %steps.6 320 12 17 ];
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_320_20_320_99_begin:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_320_21_320_55_begin:
+        %tmp.16 = lgetv %amInfo;
+        symbol [ amInfo %tmp.16 320 21 27 ];
+        %tmp.17 = null;
+        %tmp.18 = ne %tmp.16 %tmp.17;
+        bf %tmp.18 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_320_20_320_99_else_false;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_320_39_320_55_true:
+        %tmp.19 = lgetv %amInfo;
+        symbol [ amInfo %tmp.19 320 39 45 ];
+        %tmp.20 = as %tmp.19 { (!Null) };
+        symbol [ steps %tmp.21 320 46 51 ];
+        %tmp.21 = getv %tmp.20 :steps;
+        %tmp.22 = null;
+        %tmp.23 = ne %tmp.21 %tmp.22;
+        push %tmp.23;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_320_39_320_55_end:
+        %tmp.24 = phi [%tmp.18 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_320_21_320_55_begin] [%tmp.23 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_320_39_320_55_true] [%tmp.24 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_320_39_320_55_end];
+        bf %tmp.24 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_320_20_320_99_else_false;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_320_20_320_99_true:
+        %tmp.25 = lgetv %amInfo;
+        symbol [ amInfo %tmp.25 320 63 69 ];
+        %tmp.26 = as %tmp.25 { (!Null) };
+        symbol [ steps %tmp.27 320 70 75 ];
+        %tmp.27 = getv %tmp.26 :steps;
+        push %tmp.27;
+        goto @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_320_20_320_99_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_320_20_320_99_else_false:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_320_79_320_98_begin:
+        symbol [ MOCK_MODE %tmp.29 320 79 88 ];
+        %tmp.29 = getv ? :MOCK_MODE;
+        bf %tmp.29 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_320_79_320_98_else_false;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_320_79_320_98_true:
+        %tmp.30 = 7156;
+        push %tmp.30;
+        goto @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_320_79_320_98_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_320_79_320_98_else_false:
+        %tmp.31 = 0;
+        push %tmp.31;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_320_79_320_98_end:
+        %tmp.32 = phi [%tmp.29 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_320_79_320_98_begin] [%tmp.30 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_320_79_320_98_true] [%tmp.31 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_320_79_320_98_else_false] [%tmp.32 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_320_79_320_98_end];
+        push %tmp.32;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_320_20_320_99_end:
+        %tmp.33 = phi [%tmp.24 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_320_20_320_99_begin] [%tmp.27 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_320_20_320_99_true] [%tmp.32 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_320_20_320_99_else_false] [%tmp.33 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_320_20_320_99_end];
+        lputv %steps.6 %tmp.33;
+        symbol [ steps %steps.6 320 12 17 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 321 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_314_40_330_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_314_40_330_4_stop" ]
+        %pct.7 = local;
+        symbol [ pct %pct.7 321 12 15 ];
+        %tmp.34 = lgetv %steps.6;
+        symbol [ steps %tmp.34 321 19 24 ];
+        %tmp.35 = 1.0;
+        %tmp.36 = mul %tmp.34 %tmp.35;
+        symbol [ STEP_GOAL %tmp.38 321 34 43 ];
+        %tmp.38 = getv ? :STEP_GOAL;
+        %tmp.39 = div %tmp.36 %tmp.38;
+        lputv %pct.7 %tmp.39;
+        symbol [ pct %pct.7 321 12 15 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 322 8 ]
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_322_8_324_8_if_stmt:
+        %tmp.40 = lgetv %pct.7;
+        symbol [ pct %tmp.40 322 12 15 ];
+        %tmp.41 = 1;
+        %tmp.42 = gt %tmp.40 %tmp.41;
+        bf %tmp.42 @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_322_8_324_8_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_322_8_324_8_if_true:
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_322_21_324_8_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 323 12 ]
+        %tmp.43 = 1;
+        lputv %pct.7 %tmp.43;
+        symbol [ pct %pct.7 323 12 15 ];
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_322_21_324_8_stop:
+        goto @D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_322_8_324_8_if_end;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_322_8_324_8_if_end:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 325 8 ]
+        %tmp.44 = lgetv %dc;
+        symbol [ dc %tmp.44 325 8 10 ];
+        symbol [ setColor %tmp.45 325 11 19 ];
+        %tmp.45 = getv function %tmp.44 :setColor;
+        symbol [ COLOR_MUTED %tmp.47 325 20 31 ];
+        %tmp.47 = getv ? :COLOR_MUTED;
+        symbol [ COLOR_BG %tmp.49 325 33 41 ];
+        %tmp.49 = getv ? :COLOR_BG;
+        invoke %tmp.44 %tmp.45(%tmp.47, %tmp.49);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 326 8 ]
+        %tmp.50 = lgetv %dc;
+        symbol [ dc %tmp.50 326 8 10 ];
+        symbol [ drawRectangle %tmp.51 326 11 24 ];
+        %tmp.51 = getv function %tmp.50 :drawRectangle;
+        %tmp.52 = lgetv %pad.4;
+        symbol [ pad %tmp.52 326 25 28 ];
+        %tmp.53 = lgetv %barY.2;
+        symbol [ barY %tmp.53 326 30 34 ];
+        %tmp.54 = lgetv %barW.5;
+        symbol [ barW %tmp.54 326 36 40 ];
+        %tmp.55 = lgetv %barH.3;
+        symbol [ barH %tmp.55 326 42 46 ];
+        invoke %tmp.50 %tmp.51(%tmp.52, %tmp.53, %tmp.54, %tmp.55);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 327 8 ]
+        %tmp.56 = lgetv %dc;
+        symbol [ dc %tmp.56 327 8 10 ];
+        symbol [ setColor %tmp.57 327 11 19 ];
+        %tmp.57 = getv function %tmp.56 :setColor;
+        symbol [ COLOR_GREEN %tmp.59 327 20 31 ];
+        %tmp.59 = getv ? :COLOR_GREEN;
+        symbol [ COLOR_BG %tmp.61 327 33 41 ];
+        %tmp.61 = getv ? :COLOR_BG;
+        invoke %tmp.56 %tmp.57(%tmp.59, %tmp.61);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 328 8 ]
+        %tmp.62 = lgetv %dc;
+        symbol [ dc %tmp.62 328 8 10 ];
+        symbol [ fillRectangle %tmp.63 328 11 24 ];
+        %tmp.63 = getv function %tmp.62 :fillRectangle;
+        %tmp.64 = lgetv %pad.4;
+        symbol [ pad %tmp.64 328 25 28 ];
+        %tmp.65 = lgetv %barY.2;
+        symbol [ barY %tmp.65 328 30 34 ];
+        %tmp.66 = lgetv %barW.5;
+        symbol [ barW %tmp.66 328 36 40 ];
+        %tmp.67 = lgetv %pct.7;
+        symbol [ pct %tmp.67 328 43 46 ];
+        %tmp.68 = mul %tmp.66 %tmp.67;
+        %tmp.69 = lgetv %barH.3;
+        symbol [ barH %tmp.69 328 48 52 ];
+        invoke %tmp.62 %tmp.63(%tmp.64, %tmp.65, %tmp.68, %tmp.69);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 329 8 ]
+        %tmp.70 = lgetv %dc;
+        symbol [ dc %tmp.70 329 8 10 ];
+        symbol [ drawText %tmp.71 329 11 19 ];
+        %tmp.71 = getv function %tmp.70 :drawText;
+        symbol [ _center %tmp.73 329 20 27 ];
+        %tmp.73 = getv ? :_center;
+        %tmp.74 = 0;
+        %tmp.75 = agetv %tmp.73 %tmp.74;
+        %tmp.76 = lgetv %barY.2;
+        symbol [ barY %tmp.76 329 32 36 ];
+        %tmp.77 = 10;
+        %tmp.78 = sub %tmp.76 %tmp.77;
+        symbol [ _fontLabel %tmp.80 329 43 53 ];
+        %tmp.80 = getv ? :_fontLabel;
+        symbol [ Lang %tmp.81 329 55 59 ];
+        %tmp.81 = getm $.Toybox.Lang;
+        symbol [ format %tmp.82 329 60 66 ];
+        %tmp.82 = getv function %tmp.81 :format;
+        %tmp.83 = "%d / 10K";
+        %tmp.84 = newa 1;
+        %tmp.85 = lgetv %steps.6;
+        symbol [ steps %tmp.85 329 80 85 ];
+        %tmp.86 = dup %tmp.84;
+        %tmp.87 = aputv %tmp.86 0 %tmp.85;
+        %tmp.88 = invoke %tmp.81 %tmp.82(%tmp.83, %tmp.87);
+        symbol [ G %tmp.89 329 89 90 ];
+        %tmp.89 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.90 329 91 110 ];
+        %tmp.90 = getv %tmp.89 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.70 %tmp.71(%tmp.75, %tmp.78, %tmp.80, %tmp.88, %tmp.90);
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_314_40_330_4_stop:
+    }
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 332; @symbol_functiondef = [_drawCenterTime,332,13,28]; @symbol_param<0> = [dc,332,29,31]; ]
+    function _drawCenterTime(dc) {
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_332_33_341_4_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 333 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_332_33_341_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_332_33_341_4_stop" ]
+        %info.1 = local;
+        symbol [ info %info.1 333 12 16 ];
+        symbol [ Time %tmp.1 333 19 23 ];
+        %tmp.1 = getm $.Toybox.Time;
+        symbol [ Gregorian %tmp.2 333 24 33 ];
+        %tmp.2 = getv %tmp.1 :Gregorian;
+        symbol [ info %tmp.3 333 34 38 ];
+        %tmp.3 = getv function %tmp.2 :info;
+        symbol [ Time %tmp.4 333 39 43 ];
+        %tmp.4 = getm $.Toybox.Time;
+        symbol [ now %tmp.5 333 44 47 ];
+        %tmp.5 = getv function %tmp.4 :now;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        symbol [ Time %tmp.7 333 51 55 ];
+        %tmp.7 = getm $.Toybox.Time;
+        symbol [ FORMAT_SHORT %tmp.8 333 56 68 ];
+        %tmp.8 = getv %tmp.7 :FORMAT_SHORT;
+        %tmp.9 = invoke %tmp.2 %tmp.3(%tmp.6, %tmp.8);
+        lputv %info.1 %tmp.9;
+        symbol [ info %info.1 333 12 16 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 334 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_332_33_341_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_332_33_341_4_stop" ]
+        %hStr.2 = local;
+        symbol [ hStr %hStr.2 334 12 16 ];
+        symbol [ Lang %tmp.10 334 19 23 ];
+        %tmp.10 = getm $.Toybox.Lang;
+        symbol [ format %tmp.11 334 24 30 ];
+        %tmp.11 = getv function %tmp.10 :format;
+        %tmp.12 = "%02d";
+        %tmp.13 = newa 1;
+        %tmp.14 = lgetv %info.1;
+        symbol [ info %tmp.14 334 40 44 ];
+        symbol [ hour %tmp.15 334 45 49 ];
+        %tmp.15 = getv %tmp.14 :hour;
+        %tmp.16 = dup %tmp.13;
+        %tmp.17 = aputv %tmp.16 0 %tmp.15;
+        %tmp.18 = invoke %tmp.10 %tmp.11(%tmp.12, %tmp.17);
+        lputv %hStr.2 %tmp.18;
+        symbol [ hStr %hStr.2 334 12 16 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 335 8 ]
+        [ "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_332_33_341_4_start" "D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_332_33_341_4_stop" ]
+        %mStr.3 = local;
+        symbol [ mStr %mStr.3 335 12 16 ];
+        symbol [ Lang %tmp.19 335 19 23 ];
+        %tmp.19 = getm $.Toybox.Lang;
+        symbol [ format %tmp.20 335 24 30 ];
+        %tmp.20 = getv function %tmp.19 :format;
+        %tmp.21 = "%02d";
+        %tmp.22 = newa 1;
+        %tmp.23 = lgetv %info.1;
+        symbol [ info %tmp.23 335 40 44 ];
+        symbol [ min %tmp.24 335 45 48 ];
+        %tmp.24 = getv %tmp.23 :min;
+        %tmp.25 = dup %tmp.22;
+        %tmp.26 = aputv %tmp.25 0 %tmp.24;
+        %tmp.27 = invoke %tmp.19 %tmp.20(%tmp.21, %tmp.26);
+        lputv %mStr.3 %tmp.27;
+        symbol [ mStr %mStr.3 335 12 16 ];
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 337 8 ]
+        %tmp.28 = lgetv %dc;
+        symbol [ dc %tmp.28 337 8 10 ];
+        symbol [ setColor %tmp.29 337 11 19 ];
+        %tmp.29 = getv function %tmp.28 :setColor;
+        symbol [ COLOR_RED %tmp.31 337 20 29 ];
+        %tmp.31 = getv ? :COLOR_RED;
+        symbol [ COLOR_BG %tmp.33 337 31 39 ];
+        %tmp.33 = getv ? :COLOR_BG;
+        invoke %tmp.28 %tmp.29(%tmp.31, %tmp.33);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 338 8 ]
+        %tmp.34 = lgetv %dc;
+        symbol [ dc %tmp.34 338 8 10 ];
+        symbol [ drawText %tmp.35 338 11 19 ];
+        %tmp.35 = getv function %tmp.34 :drawText;
+        symbol [ _center %tmp.37 338 20 27 ];
+        %tmp.37 = getv ? :_center;
+        %tmp.38 = 0;
+        %tmp.39 = agetv %tmp.37 %tmp.38;
+        %tmp.40 = 30;
+        %tmp.41 = add %tmp.39 %tmp.40;
+        symbol [ _center %tmp.43 338 37 44 ];
+        %tmp.43 = getv ? :_center;
+        %tmp.44 = 1;
+        %tmp.45 = agetv %tmp.43 %tmp.44;
+        %tmp.46 = 20;
+        %tmp.47 = sub %tmp.45 %tmp.46;
+        symbol [ _fontTimeLarge %tmp.49 338 54 68 ];
+        %tmp.49 = getv ? :_fontTimeLarge;
+        %tmp.50 = lgetv %hStr.2;
+        symbol [ hStr %tmp.50 338 70 74 ];
+        symbol [ G %tmp.51 338 76 77 ];
+        %tmp.51 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.52 338 78 97 ];
+        %tmp.52 = getv %tmp.51 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.34 %tmp.35(%tmp.41, %tmp.47, %tmp.49, %tmp.50, %tmp.52);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 339 8 ]
+        %tmp.53 = lgetv %dc;
+        symbol [ dc %tmp.53 339 8 10 ];
+        symbol [ setColor %tmp.54 339 11 19 ];
+        %tmp.54 = getv function %tmp.53 :setColor;
+        symbol [ COLOR_WHITE %tmp.56 339 20 31 ];
+        %tmp.56 = getv ? :COLOR_WHITE;
+        symbol [ COLOR_BG %tmp.58 339 33 41 ];
+        %tmp.58 = getv ? :COLOR_BG;
+        invoke %tmp.53 %tmp.54(%tmp.56, %tmp.58);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 340 8 ]
+        %tmp.59 = lgetv %dc;
+        symbol [ dc %tmp.59 340 8 10 ];
+        symbol [ drawText %tmp.60 340 11 19 ];
+        %tmp.60 = getv function %tmp.59 :drawText;
+        symbol [ _center %tmp.62 340 20 27 ];
+        %tmp.62 = getv ? :_center;
+        %tmp.63 = 0;
+        %tmp.64 = agetv %tmp.62 %tmp.63;
+        %tmp.65 = 10;
+        %tmp.66 = sub %tmp.64 %tmp.65;
+        symbol [ _center %tmp.68 340 37 44 ];
+        %tmp.68 = getv ? :_center;
+        %tmp.69 = 1;
+        %tmp.70 = agetv %tmp.68 %tmp.69;
+        %tmp.71 = 26;
+        %tmp.72 = add %tmp.70 %tmp.71;
+        symbol [ _fontTimeSmall %tmp.74 340 54 68 ];
+        %tmp.74 = getv ? :_fontTimeSmall;
+        %tmp.75 = lgetv %mStr.3;
+        symbol [ mStr %tmp.75 340 70 74 ];
+        symbol [ G %tmp.76 340 76 77 ];
+        %tmp.76 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.77 340 78 97 ];
+        %tmp.77 = getv %tmp.76 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.59 %tmp.60(%tmp.66, %tmp.72, %tmp.74, %tmp.75, %tmp.77);
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_332_33_341_4_stop:
+    }
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 343; @symbol_functiondef = [_drawFooter,343,13,24]; @symbol_param<0> = [dc,343,25,27]; ]
+    function _drawFooter(dc) {
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_343_29_346_4_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 344 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 344 8 10 ];
+        symbol [ setColor %tmp.2 344 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ COLOR_SLATE %tmp.4 344 20 31 ];
+        %tmp.4 = getv ? :COLOR_SLATE;
+        symbol [ COLOR_BG %tmp.6 344 33 41 ];
+        %tmp.6 = getv ? :COLOR_BG;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 345 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 345 8 10 ];
+        symbol [ drawText %tmp.8 345 11 19 ];
+        %tmp.8 = getv function %tmp.7 :drawText;
+        symbol [ _center %tmp.10 345 20 27 ];
+        %tmp.10 = getv ? :_center;
+        %tmp.11 = 0;
+        %tmp.12 = agetv %tmp.10 %tmp.11;
+        %tmp.13 = lgetv %dc;
+        symbol [ dc %tmp.13 345 32 34 ];
+        symbol [ getHeight %tmp.14 345 35 44 ];
+        %tmp.14 = getv function %tmp.13 :getHeight;
+        %tmp.15 = invoke %tmp.13 %tmp.14();
+        %tmp.16 = 14;
+        %tmp.17 = sub %tmp.15 %tmp.16;
+        symbol [ _fontLabel %tmp.19 345 53 63 ];
+        %tmp.19 = getv ? :_fontLabel;
+        %tmp.20 = "GOAL 10K";
+        symbol [ G %tmp.21 345 77 78 ];
+        %tmp.21 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.22 345 79 98 ];
+        %tmp.22 = getv %tmp.21 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.7 %tmp.8(%tmp.12, %tmp.17, %tmp.19, %tmp.20, %tmp.22);
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_343_29_346_4_stop:
+    }
+    [ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 348; @symbol_functiondef = [_monthAbbrev,348,13,25]; @symbol_param<0> = [m,348,26,27]; ]
+    function _monthAbbrev(m) {
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_348_29_350_4_start:
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 349 8 ]
+        %tmp.1 = newa 12;
+        %tmp.2 = "Jan";
+        %tmp.3 = dup %tmp.1;
+        %tmp.4 = aputv %tmp.3 0 %tmp.2;
+        %tmp.5 = "Feb";
+        %tmp.6 = dup %tmp.4;
+        %tmp.7 = aputv %tmp.6 1 %tmp.5;
+        %tmp.8 = "Mar";
+        %tmp.9 = dup %tmp.7;
+        %tmp.10 = aputv %tmp.9 2 %tmp.8;
+        %tmp.11 = "Apr";
+        %tmp.12 = dup %tmp.10;
+        %tmp.13 = aputv %tmp.12 3 %tmp.11;
+        %tmp.14 = "May";
+        %tmp.15 = dup %tmp.13;
+        %tmp.16 = aputv %tmp.15 4 %tmp.14;
+        %tmp.17 = "Jun";
+        %tmp.18 = dup %tmp.16;
+        %tmp.19 = aputv %tmp.18 5 %tmp.17;
+        %tmp.20 = "Jul";
+        %tmp.21 = dup %tmp.19;
+        %tmp.22 = aputv %tmp.21 6 %tmp.20;
+        %tmp.23 = "Aug";
+        %tmp.24 = dup %tmp.22;
+        %tmp.25 = aputv %tmp.24 7 %tmp.23;
+        %tmp.26 = "Sep";
+        %tmp.27 = dup %tmp.25;
+        %tmp.28 = aputv %tmp.27 8 %tmp.26;
+        %tmp.29 = "Oct";
+        %tmp.30 = dup %tmp.28;
+        %tmp.31 = aputv %tmp.30 9 %tmp.29;
+        %tmp.32 = "Nov";
+        %tmp.33 = dup %tmp.31;
+        %tmp.34 = aputv %tmp.33 10 %tmp.32;
+        %tmp.35 = "Dec";
+        %tmp.36 = dup %tmp.34;
+        %tmp.37 = aputv %tmp.36 11 %tmp.35;
+        %tmp.38 = lgetv %m;
+        symbol [ m %tmp.38 349 89 90 ];
+        %tmp.39 = 1;
+        %tmp.40 = sub %tmp.38 %tmp.39;
+        %tmp.41 = agetv %tmp.37 %tmp.40;
+        ret %tmp.41;
+D__学习科研_DUAP服务器数据保存_压缩_御_autodl_tmp_code2_佳明_盘_My_source_SynapseView_mc_348_29_350_4_stop:
+    }
+}
+[ @file = "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc"; @line = 1; ]
+<init> {
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 14 6 ]
+    symbol [ G %tmp.42 14 21 22 ];
+    %tmp.42 = getm $.Toybox.Graphics;
+    symbol [ COLOR_WHITE %tmp.43 14 23 34 ];
+    %tmp.43 = getv %tmp.42 :COLOR_WHITE;
+    putv self :COLOR_WHITE %tmp.43;
+[ "D:\学习科研\DUAP服务器数据保存\压缩防御\autodl-tmp\code2\佳明表盘\My\source\SynapseView.mc" 15 6 ]
+    symbol [ G %tmp.44 15 21 22 ];
+    %tmp.44 = getm $.Toybox.Graphics;
+    symbol [ COLOR_BLACK %tmp.45 15 23 34 ];
+    %tmp.45 = getv %tmp.44 :COLOR_BLACK;
+    putv self :COLOR_BG %tmp.45;
+}
