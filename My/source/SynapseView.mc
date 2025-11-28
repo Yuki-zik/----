@@ -189,9 +189,12 @@ class SynapseView extends Ui.WatchFace {
     }
 
     function _getCalories() {
-        var info = AM.getInfo();
-        if (info != null && info.calories != null) {
+        var info = (_snapshot has :amInfo) ? _snapshot[:amInfo] : null;
+        if (info != null && (info has :calories) && info.calories != null) {
             return Lang.format("%d kcal", [info.calories]);
+        }
+        if (MOCK_MODE) {
+            return "642 kcal";
         }
         return "kcal --";
     }
