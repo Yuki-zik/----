@@ -47,6 +47,7 @@ class SynapseView extends Ui.WatchFace {
     var _topSlots;
     var _bottomSlots;
     var _leftSlots;
+    var _snapshot;
     var _fontTimeLarge;
     var _fontTimeSmall;
     var _fontLabel;
@@ -57,6 +58,7 @@ class SynapseView extends Ui.WatchFace {
         _topSlots = [];
         _bottomSlots = [];
         _leftSlots = [];
+        _snapshot = {};
     }
 
     function onLayout(dc) {
@@ -103,7 +105,8 @@ class SynapseView extends Ui.WatchFace {
     }
 
     function onUpdate(dc) {
-        var amInfo = AM.getInfo();
+        _snapshot = _collectSnapshot();
+        var amInfo = (_snapshot has :amInfo) ? _snapshot[:amInfo] : null;
 
         dc.setColor(G.COLOR_BLACK, G.COLOR_BLACK);
         dc.clear();
@@ -131,7 +134,7 @@ class SynapseView extends Ui.WatchFace {
 
     // --- Data getters ---
     function _getHeartRate() {
-        var info = AM.getInfo();
+        var info = (_snapshot has :amInfo) ? _snapshot[:amInfo] : null;
         if (info != null && (info has :currentHeartRate) && info.currentHeartRate != null) {
             return Lang.format("%d bpm", [info.currentHeartRate]);
         }
@@ -142,7 +145,7 @@ class SynapseView extends Ui.WatchFace {
     }
 
     function _getSteps() {
-        var info = AM.getInfo();
+        var info = (_snapshot has :amInfo) ? _snapshot[:amInfo] : null;
         if (info != null && info.steps != null) {
             return Lang.format("%d", [info.steps]);
         }
@@ -153,7 +156,7 @@ class SynapseView extends Ui.WatchFace {
     }
 
     function _getStepsShort() {
-        var info = AM.getInfo();
+        var info = (_snapshot has :amInfo) ? _snapshot[:amInfo] : null;
         if (info != null && info.steps != null) {
             var pct = (info.steps * 100.0) / STEP_GOAL;
             if (pct > 100) {
@@ -168,12 +171,12 @@ class SynapseView extends Ui.WatchFace {
     }
 
     function _getBattery() {
-        var stats = Sys.getSystemStats();
-        return Lang.format("%d%%", [stats.battery]);
+        var pct = _getBatteryPct();
+        return Lang.format("%d%%", [pct]);
     }
 
     function _getBatteryPct() {
-        var stats = Sys.getSystemStats();
+        var stats = (_snapshot has :sysStats) ? _snapshot[:sysStats] : null;
         if (stats != null && stats.battery != null) {
             return stats.battery;
         }
@@ -181,14 +184,17 @@ class SynapseView extends Ui.WatchFace {
     }
 
     function _getDateShort() {
-        var info = Time.Gregorian.info(Time.now(), Time.FORMAT_SHORT);
+        var info = (_snapshot has :timeInfo) ? _snapshot[:timeInfo] : Time.Gregorian.info(Time.now(), Time.FORMAT_SHORT);
         return Lang.format("%02d/%02d", [info.day, info.month]);
     }
 
     function _getCalories() {
-        var info = AM.getInfo();
-        if (info != null && info.calories != null) {
+        var info = (_snapshot has :amInfo) ? _snapshot[:amInfo] : null;
+        if (info != null && (info has :calories) && info.calories != null) {
             return Lang.format("%d kcal", [info.calories]);
+        }
+        if (MOCK_MODE) {
+            return "642 kcal";
         }
         return "kcal --";
     }
@@ -260,7 +266,7 @@ class SynapseView extends Ui.WatchFace {
     }
 
     function _drawDayArc(dc) {
-        var info = Time.Gregorian.info(Time.now(), Time.FORMAT_SHORT);
+        var info = (_snapshot has :timeInfo) ? _snapshot[:timeInfo] : Time.Gregorian.info(Time.now(), Time.FORMAT_SHORT);
         var minutes = info.hour * 60 + info.min;
         var progress = minutes / 1440.0;
         _drawArcSegment(dc, 115, -150, 120, progress, COLOR_CYAN, COLOR_MUTED);
@@ -330,7 +336,7 @@ class SynapseView extends Ui.WatchFace {
     }
 
     function _drawCenterTime(dc) {
-        var info = Time.Gregorian.info(Time.now(), Time.FORMAT_SHORT);
+        var info = (_snapshot has :timeInfo) ? _snapshot[:timeInfo] : Time.Gregorian.info(Time.now(), Time.FORMAT_SHORT);
         var hStr = Lang.format("%02d", [info.hour]);
         var mStr = Lang.format("%02d", [info.min]);
 
@@ -343,6 +349,14 @@ class SynapseView extends Ui.WatchFace {
     function _drawFooter(dc) {
         dc.setColor(COLOR_SLATE, COLOR_BG);
         dc.drawText(_center[0], dc.getHeight() - 14, _fontLabel, "GOAL 10K", G.TEXT_JUSTIFY_CENTER);
+    }
+
+    function _collectSnapshot() {
+        var snapshot = {};
+        snapshot[:amInfo] = AM.getInfo();
+        snapshot[:sysStats] = Sys.getSystemStats();
+        snapshot[:timeInfo] = Time.Gregorian.info(Time.now(), Time.FORMAT_SHORT);
+        return snapshot;
     }
 
     function _monthAbbrev(m) {
